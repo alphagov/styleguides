@@ -120,8 +120,17 @@
           something_else
         end
 
--   The `and` and `or` keywords are banned. It’s just not worth it.
-    Always use `&&` and `||` instead.
+-   Always use `&&` and `||` for logic. The `and` and `or` keywords should be
+    used only for control flow, and only in simple cases.
+
+        def some_method
+          save_changes or raise "Cthulhu fhtagn"
+          do_something_else
+        end
+
+    Do not use `and`/`or` if the left-hand side of the expression is more
+    complicated than a simple method call. Consider in the case above
+    whether the exception could better be handled in save_changes.
 
 -   Avoid multi-line `?:` (the ternary operator), use `if/unless`
     instead.
