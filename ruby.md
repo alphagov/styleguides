@@ -458,13 +458,28 @@
     duplicates. This is a hybrid of `Array`’s intuitive inter-operation
     facilities and `Hash`’s fast lookup.
 
--   Use symbols instead of strings as hash keys.
+-   Prefer symbols instead of strings for hashes generated and consumed
+    within the application.
 
         # bad
-        hash = { "one" => 1, "two" => 2, "three" => 3 }
+        hash = {"one" => 1, "two" => 2, "three" => 3}
 
         # good
-        hash = { one: 1, two: 2, three: 3 }
+        hash = {one: 1, two: 2, three: 3}
+
+- Use Ruby 1.9 syntax for symbolic hash keys. This includes method calls.
+
+        # bad
+        hash = {:one => 1, :two => 2}
+
+        # good
+        hash = {one: 1, two: 2}
+
+        # bad
+        some_method :one => 1, :two => 2
+
+        # good
+        some_method one: 1, two: 2
 
 ## Strings
 
