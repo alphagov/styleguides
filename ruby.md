@@ -185,6 +185,9 @@
     `{...}` for those that return a value. Avoid side-effects in a
     functional-style block whose value you will use.
 
+    Freely use single-letter mnemonics for block variables within a single
+    line.
+
     Never chain `do...end`.
 
         names = ["Bozhidar", "Steve", "Sarah"]
@@ -203,7 +206,7 @@
         end.map { |name| name.upcase }
 
         # good
-        names.select { |name| name.start_with?("S") }.map { |name| name.upcase }
+        names.select { |n| n.start_with?("S") }.map(&:upcase)
 
     Wrap long functional-style blocks after the `{ |var|`:
 
