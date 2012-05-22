@@ -286,6 +286,13 @@
     scripts is discouraged. Prefer long form versions such as
     `$PROGRAM_NAME`.
 
+-   Use parentheses when using the return value of a method. Omit them
+    otherwise, unless necessary due to syntax edge cases.
+
+        value = calculate_something(a, b)
+
+        do_something a, b
+
 -   Never put a space between a method name and the opening parenthesis.
 
         # bad
