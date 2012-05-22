@@ -582,7 +582,7 @@
         %(<tr><td class="name">#{name}</td>)
 
 -   Use `%r` only for regular expressions matching *more than* one "/"
-    character.
+    character, or where `//` expressions would be parsed as `/` operations.
 
         # bad
         %r(\s+)
