@@ -216,6 +216,15 @@
 
     Prefer method extraction to chaining several multiline blocks.
 
+-   Use `Symbol#to_proc` where possible. It’s terser and eliminates
+    variable name noise.
+
+        # bad
+        names.map { |n| n.upcase }
+
+        # good
+        names.map(&:upcase)
+
 -   Avoid `return` where not required.
 
         # bad
