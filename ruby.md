@@ -69,11 +69,7 @@
            # body omitted
          end
 
--   Never use `for`, unless you know exactly why. Most of the time
-    iterators should be used instead. `for` is implemented in terms of
-    `each` (so you’re adding a level of indirection), but with a twist -
-    `for` doesn’t introduce a new scope (unlike `each`) and variables
-    defined in its block will be visible outside it.
+-   Never use `for`. This includes in templates. Use iterators instead.
 
         arr = [1, 2, 3]
 
@@ -83,7 +79,9 @@
         end
 
         # good
-        arr.each { |elem| puts elem }
+        arr.each do |elem|
+          puts elem
+        end
 
 -   Never use `then` for multi-line `if/unless`.
 
