@@ -561,8 +561,3 @@ sweet:
 
         # good
         %r(^/blog/2011/(.*)$)
-
-## Above all else
-
-Follow your
-![:heart:](https://a248.e.akamai.net/assets.github.com/images/icons/emoji/heart.png?v5 ":heart:")
