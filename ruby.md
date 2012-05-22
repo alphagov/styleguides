@@ -181,34 +181,37 @@
           # body omitted
         end
 
--   Prefer `{...}` over `do...end` for single-line blocks. Avoid using
-    `{...}` for multi-line blocks (multiline chaining is always ugly).
-    Always use `do...end` for "control flow" and "method definitions"
-    (e.g. in Rakefiles and certain DSLs). Avoid `do...end` when
-    chaining.
+-   Use `do...end` for blocks that perform actions (that have side effects) and
+    `{...}` for those that return a value. Avoid side-effects in a
+    functional-style block whose value you will use.
+
+    Never chain `do...end`.
 
         names = ["Bozhidar", "Steve", "Sarah"]
 
-        # good
+        # bad
         names.each { |name| puts name }
 
-        # bad
+        # good
         names.each do |name|
           puts name
         end
-
-        # good
-        names.select { |name| name.start_with?("S") }.map { |name| name.upcase }
 
         # bad
         names.select do |name|
           name.start_with?("S")
         end.map { |name| name.upcase }
 
-    Some will argue that multiline chaining would look OK with the use
-    of {...}, but they should ask themselves - it this code really
-    readable and can’t the blocks contents be extracted into nifty
-    methods.
+        # good
+        names.select { |name| name.start_with?("S") }.map { |name| name.upcase }
+
+    Wrap long functional-style blocks after the `{ |var|`:
+
+        names.map { |name|
+          name.upcase.gsub(/ /, "_")
+        }
+
+    Prefer method extraction to chaining several multiline blocks.
 
 -   Avoid `return` where not required.
 
