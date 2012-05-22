@@ -331,6 +331,28 @@
     method exists. ([More on
     this](http://dablog.rubypal.com/2007/8/15/bang-methods-or-danger-will-rubyist)).
 
+-   Avoid get/set method names: these are better implemented using Ruby's
+    assignment syntax sugar. Use `attr_reader`, `attr_writer`, and
+    `attr_accessor` for simple instance variable accessors.
+
+        # bad
+        def get_foo
+          # ...
+        end
+
+        def set_foo(bar)
+          # ...
+        end
+
+        # good
+        def foo
+          # ...
+        end
+
+        def foo=(bar)
+          # ...
+        end
+
 ## Classes
 
 -   Avoid the usage of class (`@@`) variables due to their "nasty"
