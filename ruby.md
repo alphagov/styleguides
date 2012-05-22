@@ -11,7 +11,7 @@
 
         sum = 1 + 2
         a, b = 1, 2
-        1 > 2 ? true : false; puts 'Hi'
+        1 > 2 ? true : false; puts "Hi"
         [1, 2, 3].each { |e| puts e }
 
 -   No spaces after `(`, `[` or before `]`, `)`.
@@ -22,23 +22,23 @@
 -   Indent `when` as deep as `case`.
 
         case
-        when song.name == 'Misty'
-          puts 'Not again!'
+        when song.name == "Misty"
+          puts "Not again!"
         when song.duration > 120
-          puts 'Too long!'
+          puts "Too long!"
         when Time.now.hour > 21
-          puts "It's too late"
+          puts "It’s too late"
         else
           song.play
         end
 
         kind = case year
-               when 1850..1889 then 'Blues'
-               when 1890..1909 then 'Ragtime'
-               when 1910..1929 then 'New Orleans Jazz'
-               when 1930..1939 then 'Swing'
-               when 1940..1950 then 'Bebop'
-               else 'Jazz'
+               when 1850..1889 then "Blues"
+               when 1890..1909 then "Ragtime"
+               when 1910..1929 then "New Orleans Jazz"
+               when 1930..1939 then "Swing"
+               when 1940..1950 then "Bebop"
+               else "Jazz"
                end
 
 -   Use empty lines between `def`s and to break up a method into logical
@@ -59,7 +59,7 @@
 ## Syntax
 
 -   Use `def` with parentheses when there are arguments. Omit the
-    parentheses when the method doesn't accept any arguments.
+    parentheses when the method doesn’t accept any arguments.
 
          def some_method
            # body omitted
@@ -71,8 +71,8 @@
 
 -   Never use `for`, unless you know exactly why. Most of the time
     iterators should be used instead. `for` is implemented in terms of
-    `each` (so you're adding a level of indirection), but with a twist -
-    `for` doesn't introduce a new scope (unlike `each`) and variables
+    `each` (so you’re adding a level of indirection), but with a twist -
+    `for` doesn’t introduce a new scope (unlike `each`) and variables
     defined in its block will be visible outside it.
 
         arr = [1, 2, 3]
@@ -122,7 +122,7 @@
           something_else
         end
 
--   The `and` and `or` keywords are banned. It's just not worth it.
+-   The `and` and `or` keywords are banned. It’s just not worth it.
     Always use `&&` and `||` instead.
 
 -   Avoid multi-line `?:` (the ternary operator), use `if/unless`
@@ -143,19 +143,19 @@
 
         # bad
         unless success?
-          puts 'failure'
+          puts "failure"
         else
-          puts 'success'
+          puts "success"
         end
 
         # good
         if success?
-          puts 'success'
+          puts "success"
         else
-          puts 'failure'
+          puts "failure"
         end
 
--   Don't use parentheses around the condition of an `if/unless/while`,
+-   Don’t use parentheses around the condition of an `if/unless/while`,
     unless the condition contains an assignment (see "Using the return
     value of `=`" below).
 
@@ -200,7 +200,7 @@
 
     Some will argue that multiline chaining would look OK with the use
     of {...}, but they should ask themselves - it this code really
-    readable and can't the blocks contents be extracted into nifty
+    readable and can’t the blocks contents be extracted into nifty
     methods.
 
 -   Avoid `return` where not required.
@@ -245,10 +245,10 @@
 
 -   Use `||=` freely to initialize variables.
 
-        # set name to Bozhidar, only if it's nil or false
-        name ||= 'Bozhidar'
+        # set name to Bozhidar, only if it’s nil or false
+        name ||= "Bozhidar"
 
--   Don't use `||=` to initialize boolean variables. (Consider what
+-   Don’t use `||=` to initialize boolean variables. (Consider what
     would happen if the current value happened to be `false`.)
 
         # bad - would set enabled to true even if it was false
@@ -306,7 +306,7 @@
     behavior in inheritance.
 
         class Parent
-          @@class_var = 'parent'
+          @@class_var = "parent"
 
           def self.print_class_var
             puts @@class_var
@@ -314,7 +314,7 @@
         end
 
         class Child < Parent
-          @@class_var = 'child'
+          @@class_var = "child"
         end
 
         Parent.print_class_var # => will print "child"
@@ -383,7 +383,7 @@
 
 ## Exceptions
 
--   Don't use exceptions for flow of control.
+-   Don’t use exceptions for flow of control.
 
         # bad
         begin
@@ -420,20 +420,20 @@
     strings.
 
         # bad
-        STATES = ['draft', 'open', 'closed']
+        STATES = ["draft", "open", "closed"]
 
         # good
         STATES = %w(draft open closed)
 
 -   Use `Set` instead of `Array` when dealing with unique elements.
     `Set` implements a collection of unordered values with no
-    duplicates. This is a hybrid of `Array`'s intuitive inter-operation
-    facilities and `Hash`'s fast lookup.
+    duplicates. This is a hybrid of `Array`’s intuitive inter-operation
+    facilities and `Hash`’s fast lookup.
 
 -   Use symbols instead of strings as hash keys.
 
         # bad
-        hash = { 'one' => 1, 'two' => 2, 'three' => 3 }
+        hash = { "one" => 1, "two" => 2, "three" => 3 }
 
         # good
         hash = { one: 1, two: 2, three: 3 }
@@ -443,19 +443,21 @@
 -   Prefer string interpolation instead of string concatenation:
 
         # bad
-        email_with_name = user.name + ' <' + user.email + '>'
+        email_with_name = user.name + " <" + user.email + ">"
 
         # good
         email_with_name = "#{user.name} <#{user.email}>"
 
--   Prefer single-quoted strings when you don't need string
-    interpolation or special symbols such as `\t`, `\n`, `'`, etc.
+-   Use double-quoted strings. Most files will need some double-quoted strings,
+    so it’s more consistent.  Interpolation is in any case easy to see thanks
+    to syntax highlighting, and there is no speed advantage to using single
+    quotes.
 
         # bad
-        name = "Bozhidar"
+        name = 'Bozhidar'
 
         # good
-        name = 'Bozhidar'
+        name = "Bozhidar"
 
 -   Avoid using `String#+` when you need to construct large data chunks.
     Instead, use `String#<<`. Concatenation mutates the string instance
@@ -463,8 +465,8 @@
     of new string objects.
 
         # good and also fast
-        html = ''
-        html << '<h1>Page title</h1>'
+        html = ""
+        html << "<h1>Page title</h1>"
 
         paragraphs.each do |paragraph|
           html << "<p>#{paragraph}</p>"
@@ -491,7 +493,7 @@
 
         string = "some injection\nusername"
         string[/^username$/]   # matches
-        string[/\Ausername\Z/] # don't match
+        string[/\Ausername\Z/] # don’t match
 
 -   Use `x` modifier for complex regexps. This makes them more readable
     and you can add some useful comments. Just be careful as spaces are
@@ -529,7 +531,7 @@
         # good (requires interpolation, has quotes, single line)
         %(<tr><td class="name">#{name}</td>)
 
--   Use `%r` only for regular expressions matching *more than* one '/'
+-   Use `%r` only for regular expressions matching *more than* one "/"
     character.
 
         # bad
