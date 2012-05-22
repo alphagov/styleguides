@@ -1,5 +1,7 @@
 ## Coding Style
 
+-   Write for Ruby 1.9.
+
 -   Use soft-tabs with a two space indent.
 
 -   Keep lines fewer than 80 characters.
