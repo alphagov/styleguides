@@ -532,11 +532,11 @@
 
 -   Be careful with `^` and `$` as they match start/end of line, not
     string endings. If you want to match the whole string use: `\A` and
-    `\Z`.
+    `\z`.
 
         string = "some injection\nusername"
         string[/^username$/]   # matches
-        string[/\Ausername\Z/] # don’t match
+        string[/\Ausername\z/] # don’t match
 
 -   Use `x` modifier for complex regexps. This makes them more readable
     and you can add some useful comments. Just be careful as spaces are
