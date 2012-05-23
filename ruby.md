@@ -1,4 +1,6 @@
-## Coding Style
+# Ruby coding style
+
+## General
 
 -   Write for Ruby 1.9.
 
