@@ -1,4 +1,6 @@
-## CSS Coding Style
+## Coding Style
+
+-   Write for Ruby 1.9.
 
 -		Put attributes for elements in alphabetical order
 
@@ -10,10 +12,10 @@
 
 -		When declaring bleeding edge new features, make sure to use browser prefixes, and that the the 'final' proposed attribute name is declared last
 
-For example:
+		For example:
 
-```css
-	-moz-border-radius: xx;
-	-webkit-border-radius: xx;
-	border-radius: xx;
+		```css
+		-moz-border-radius: xx;
+		-webkit-border-radius: xx;
+		border-radius: xx;
 
