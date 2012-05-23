@@ -17,4 +17,3 @@ For example:
 	-webkit-border-radius: xx;
 	border-radius: xx;
 
-TEST
