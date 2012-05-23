@@ -3,8 +3,8 @@
 Commit messages should contain:
 
 * A short summary
-  * No more than 50 characters
-  * In the present tense
+  * Use no more than 50 characters
+  * Write in the present tense
   * Do not add a full stop
 * A longer explanation, if needed
   * Leave a blank line before
