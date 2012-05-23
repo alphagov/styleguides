@@ -19,11 +19,12 @@
     -webkit-border-radius: xx;
     border-radius: xx;
     ```
+
 ## Our friend Internet Explorer
 
--   For targeting IE8 and below use a class of 'lte-ie8', then add specific hacks for IE7 with an _ and for IE6 with an *.
+For targeting IE8 and below use a class of 'lte-ie8', then add specific hacks for IE7 with an _ and for IE6 with an *.
 
-    For example:
+For example:
 
     ```css
     .foo {
@@ -36,7 +37,8 @@
       _color: red; /* IE6 and older */
     }
     ```
-    (stolen from http://mathiasbynens.be/notes/safe-css-hacks)
+    
+(stolen from http://mathiasbynens.be/notes/safe-css-hacks)
 
 
 ## REM sizing - why?
