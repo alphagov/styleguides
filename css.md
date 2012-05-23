@@ -26,18 +26,18 @@ For targeting IE8 and below use a class of 'lte-ie8', then add specific hacks fo
 
 For example:
 
-    ```css
-    .foo {
-      color: black;
-    }
+```css
+.foo {
+  color: black;
+}
 
-    .lte-ie8 .foo {
-      color: green; /* IE8 and older */
-      *color: blue; /* IE7 and older */
-      _color: red; /* IE6 and older */
-    }
-    ```
-    
+.lte-ie8 .foo {
+  color: green; /* IE8 and older */
+  *color: blue; /* IE7 and older */
+  _color: red; /* IE6 and older */
+}
+```
+
 (stolen from http://mathiasbynens.be/notes/safe-css-hacks)
 
 
