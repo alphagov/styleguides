@@ -10,7 +10,7 @@
 
 -		Use tab size of 2
 
--		When declaring bleeding edge new features, make sure to use browser prefixes, and that the the 'final' proposed attribute name is declared last
+-		When declaring bleeding edge new features, make sure to use browser prefixes, and that the the 'final' proposed attribute name is declared last.
 
 		For example:
 
@@ -18,4 +18,5 @@
 		-moz-border-radius: xx;
 		-webkit-border-radius: xx;
 		border-radius: xx;
+		```
 
