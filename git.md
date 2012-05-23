@@ -4,6 +4,7 @@ Commit messages should contain:
 
 * A short summary
   * Use no more than 50 characters
+  * Start with a capital letter
   * Write in the present tense
   * Do not add a full stop
 * A longer explanation, if needed
