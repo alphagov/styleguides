@@ -1,7 +1,5 @@
 ## CSS Coding Style
 
--   Write for Ruby 1
-
 -   Put attributes for elements in alphabetical order
 
 -   Use comments to divide and clarify what groups of declarations are for
