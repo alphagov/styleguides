@@ -6,7 +6,7 @@
 
 -   Font-sizing: use rems with px as a fall-back (this is covered in more detail below) 
 
--   Use tab size of 2
+-   Use soft-tabs with a two space indent.
 
 -   When declaring bleeding edge new features, make sure to use browser prefixes, and that the 'final' proposed attribute name is declared last
 
