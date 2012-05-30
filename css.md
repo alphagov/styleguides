@@ -8,7 +8,7 @@
 
 -   Use tab size of 2
 
--   When declaring bleeding edge new features, make sure to use browser prefixes, and that the the 'final' proposed attribute name is declared last
+-   When declaring bleeding edge new features, make sure to use browser prefixes, and that the 'final' proposed attribute name is declared last
 
     For example:
 
@@ -20,7 +20,7 @@
 
 ## Our friend Internet Explorer
 
-For targeting IE8 and below use a class of 'lte-ie8', then add specific hacks for IE7 with an _ and for IE6 with an *.
+For targeting IE8 and below use a class of `lte-ie8`, then add specific hacks for IE7 with an `_` and for IE6 with an `*`.
 
 For example:
 
@@ -43,7 +43,7 @@ For example:
 
 At the moment the Citizen site uses em-based styles, where the font-sizes are calculated in relation to contextual em-sizing set on parent dom elements. This means that we have to calculate new em-sizes for every different dom context, which has a negative effect on code reuse and design consistency.
 
-To improve this, we're changing the core font-size on the HTML element from 100% to 62.5%, which will allow new styles to utilise simple rem/px font-sizes, e.g.
+To improve this, we're changing the core font-size on the HTML element from 100% to 62.5% (10px), which will allow new styles to utilise simple rem/px font-sizes, e.g.
 
 ```css
 element {
