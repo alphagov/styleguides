@@ -40,7 +40,7 @@
 
 ## Our friend Internet Explorer
 
-For targeting IE8 and below use a class of `lte-ie8`, then add specific hacks for IE7 with an `_` and for IE6 with an `*`.
+For targeting IE8 and below use a class of `lte-ie8`, then add specific hacks for IE7 with an `*` and for IE6 with an `_`.
 
 For example:
 
