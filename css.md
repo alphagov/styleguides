@@ -1,6 +1,26 @@
 ## CSS Coding Style
 
--   Put attributes for elements in alphabetical order
+-   Group attributes for elements by property type. Separate each group by a blank link. Follow this order where possible: display, positioning, dimensions/box model, text & font styles, colours & decoration.
+    
+    For example:
+
+    ```css
+    .my-selector {
+      display: block;
+      
+      position: relative;
+      top: 0; left: 2.4rem;
+      
+      width: 40rem; height: 60rem;
+      margin: 0 auto;
+      padding: 2rem 4rem 6rem 2rem;
+      
+      font-size: 1.9rem; line-height: 2.5rem;
+      text-decoration: underline;
+      
+      color: #333;
+      background-color: #999;
+    }
 
 -   Use comments to divide and clarify what groups of declarations are for
 
