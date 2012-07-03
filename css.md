@@ -9,13 +9,13 @@
       display: block;
       
       position: relative;
-      top: 0; left: 2.4rem;
+      top: 0; left: 2.4em;
       
-      width: 40rem; height: 60rem;
+      width: 40em; height: 60em;
       margin: 0 auto;
-      padding: 2rem 4rem 6rem 2rem;
+      padding: 2em 4em 6em 2em;
       
-      font-size: 1.9rem; line-height: 2.5rem;
+      font-size: 1.9em; line-height: 2.5em;
       text-decoration: underline;
       
       color: #333;
@@ -59,20 +59,6 @@ For example:
 (stolen from http://mathiasbynens.be/notes/safe-css-hacks)
 
 
-## REM sizing - why?
+## REM sizing - why not?
 
-At the moment the Citizen site uses em-based styles, where the font-sizes are calculated in relation to contextual em-sizing set on parent dom elements. This means that we have to calculate new em-sizes for every different dom context, which has a negative effect on code reuse and design consistency.
-
-To improve this, we're changing the core font-size on the HTML element from 100% to 62.5% (10px), which will allow new styles to utilise simple rem/px font-sizes, e.g.
-
-```css
-element {
-   font-size: 16px;
-   font-size: 1.6rem;
-}
-```
-
-rems are very similar to ems, except that they ignore dom context entirely and size relative to font-size set on the HMTL element. The px are a fallback for older browsers that don't support rem.
-
-In order to preserve the existing typography, the font-size is boosted back up again on the BODY element (which the rems will ignore).
-
+Because [IE6, 7, and 8](http://caniuse.com/rem) don't support them, and mixing pixels with rems to get cross browser support is too much redundant code.
