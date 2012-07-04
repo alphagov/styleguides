@@ -9,13 +9,15 @@
       display: block;
       
       position: relative;
-      top: 0; left: 2.4em;
+      top: 0;
+      left: 2.4em;
       
       width: 40em; height: 60em;
       margin: 0 auto;
       padding: 2em 4em 6em 2em;
       
-      font-size: 1.9em; line-height: 2.5em;
+      font-size: 1.9em;
+      line-height: 2.5em;
       text-decoration: underline;
       
       color: #333;
@@ -24,7 +26,7 @@
 
 -   Use comments to divide and clarify what groups of declarations are for
 
--   Font-sizing: use rems with px as a fall-back (this is covered in more detail below) 
+-   Dimensions: use ems
 
 -   Use soft-tabs with a two space indent.
 
