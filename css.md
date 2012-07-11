@@ -26,7 +26,7 @@
 
 -   Use comments to divide and clarify what groups of declarations are for
 
--   Dimensions: use ems
+-   Dimensions: use ems to 2 decimal places to [support IE6 and 7](http://destination-code.blogspot.co.uk/2008/10/font-size-relative-length-unit-em.html)
 
 -   Use soft-tabs with a two space indent.
 
