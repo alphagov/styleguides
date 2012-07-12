@@ -36,4 +36,24 @@ still good to use:
 * `role="main"`
 * `role="application"`
 
-[Demo of how landmark roles help screen reader users](http://tink.co.uk/2011/07/how-do-aria-landmark-roles-help-screen-reader-users/)
+[Demo of how landmark roles help screen reader users](http://tink.co.uk/2011/07/how-do-aria-landmark-roles-help-screen-reader-users$/)
+
+## Navigational elements
+
+### Emphasis
+
+If you want to give the current location emphasis within a navigational list, use a strong tag. 
+
+Example:
+
+    <nav role="navigation">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/business">Business</a></li>
+        <li><strong>Business Rates</strong></li>
+      </ol>
+    </nav>
+
+It's semantically more accurate to use `<strong>` than `<em>` and this usage is a reasonably common convention.
+
+When following this pattern ensure the text is of reasonable length. Too much text marked up in either tag can become difficult to read in some instances.
