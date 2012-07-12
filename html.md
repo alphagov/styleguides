@@ -25,7 +25,7 @@ Example:
 
 The following roles map directly to HTML5 sectioning elements:
 
-* `role="complimentary"` maps to the `<article>` element
+* `role="complementary"` maps to the `<article>` element
 * `role="contentinfo"` maps to the `<footer>` element
 * `role="navigation"` maps to the `<nav>` element
 
