@@ -4,6 +4,14 @@
 
 -   Write for Ruby 1.9.
 
+-   Lock dependencies in Gemfiles to specific versions.
+
+    ```gem 'rails', '3.2.7'```
+
+    not
+
+    ```gem 'rails', '~> 3.2.7'```
+
 -   Use soft-tabs with a two-space indent.
 
 -   Keep lines fewer than 80 characters.
