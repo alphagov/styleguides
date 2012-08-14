@@ -36,7 +36,7 @@ still good to use:
 * `role="main"`
 * `role="application"`
 
-[Demo of how landmark roles help screen reader users](http://tink.co.uk/2011/07/how-do-aria-landmark-roles-help-screen-reader-users$/)
+[Demo of how landmark roles help screen reader users](http://tink.co.uk/2011/07/how-do-aria-landmark-roles-help-screen-reader-users/)
 
 ## Navigational elements
 
