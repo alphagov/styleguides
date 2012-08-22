@@ -6,11 +6,11 @@
 
 -   Lock dependencies in Gemfiles to specific versions.
 
-    ```gem 'rails', '3.2.7'```
+    ```gem "rails", "3.2.7"```
 
     not
 
-    ```gem 'rails', '~> 3.2.7'```
+    ```gem "rails", "~> 3.2.7"```
 
 -   Use soft-tabs with a two-space indent.
 
