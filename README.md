@@ -6,6 +6,8 @@ GDS Style guides
 The Ruby guide is based on [GitHub's](https://github.com/styleguide/ruby) with
 some changes.
 
+* [Gem guidelines](https://github.com/alphagov/wiki/wiki/Gem-guidelines)
+
 ## CSS
 
 [CSS coding style guide](https://github.com/alphagov/styleguides/blob/master/css.md)
