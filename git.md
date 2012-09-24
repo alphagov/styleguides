@@ -48,8 +48,15 @@ this is [positively encouraged](http://git-scm.com/book/en/Git-Branching-Basic-B
 You are encouraged to make liberal use of Git's [history rewriting
 features](http://git-scm.com/book/en/Git-Tools-Rewriting-History) while working
 locally, in order to arrange your commits into appropriate logical chunks that
-will make sense to your fellow developers. In particular, you may find `git
-rebase --interactive` very useful.
+will make sense to your fellow developers. In particular, you may find
+`git rebase --interactive` very useful. However, you should not rewrite commits
+that have been pushed unless:
+
+  * You are **very sure** that no-one else will be affected by you rewriting the
+    branch history, *or*
+  * You have an Extremely Good Reason. For example: someone has committed
+    sensitive information (personally identifiable data, passwords and suchlike)
+    and it needs purging from history.
 
 When merging from a feature branch to master (or any other mainline development
 branch), in particular one that has previously been shared with colleagues, you
