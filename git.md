@@ -41,8 +41,19 @@ Taken from [Tim Pope’s guidelines](http://tbaggery.com/2008/04/19/a-note-about
 
 ## Branching/merging conventions
 
-You may often choose to work on a particular feature on a "feature branch" rather than directly on `master`. Indeed, given how cheap branches are in Git, this is [positively encouraged](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging).
+You may often choose to work on a particular feature on a "feature branch"
+rather than directly on `master`. Indeed, given how cheap branches are in Git,
+this is [positively encouraged](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging).
 
-You are encouraged to make liberal use of Git's [history rewriting features](http://git-scm.com/book/en/Git-Tools-Rewriting-History) while working locally, in order to arrange your commits into appropriate logical chunks that will make sense to your fellow developers. In particular, you may find `git rebase --interactive` very useful.
+You are encouraged to make liberal use of Git's [history rewriting
+features](http://git-scm.com/book/en/Git-Tools-Rewriting-History) while working
+locally, in order to arrange your commits into appropriate logical chunks that
+will make sense to your fellow developers. In particular, you may find `git
+rebase --interactive` very useful.
 
-When merging from a feature branch to master (or any other mainline development branch), in particular one that has previously been shared with colleagues, you should use `git merge`'s `--no-ff` option to preserve evidence of your feature branch in the repository history. This advice may be freely ignored for smaller local feature branches for which a fast-forward merge will look like any other routine development work on `master`.
+When merging from a feature branch to master (or any other mainline development
+branch), in particular one that has previously been shared with colleagues, you
+should use `git merge`'s `--no-ff` option to preserve evidence of your feature
+branch in the repository history. This advice may be freely ignored for smaller
+local feature branches for which a fast-forward merge will look like any other
+routine development work on `master`.
