@@ -1,21 +1,37 @@
 GDS Style guides
 ================
 
-## Ruby
+## [Colour palette][colours]
 
-The Ruby guide is based on [GitHub's](https://github.com/styleguide/ruby) with
-some changes.
+[Hex and RGB values][colours] for all the standard colours used on GOV.UK
 
-* [Gem guidelines](https://github.com/alphagov/wiki/wiki/Gem-guidelines)
+## [CSS][css]
 
-## CSS
+## [Git][git]
 
-[CSS coding style guide](https://github.com/alphagov/styleguides/blob/master/css.md)
+## [HTML][html]
 
-## Colour palette
+## [Javascript][js]
 
-[Hex and RGB values](http://alphagov.github.com/design/gov.uk.colours/) for all the standard colours used on GOV.UK
+## [Puppet][pp]
 
-## Typography
+## [Ruby][rb]
 
-[Typographics styles](http://alphagov.github.com/design/gov.uk.typography/) used on GOV.UK
+The [Ruby guide][rb] is based on
+[GitHub's](https://github.com/styleguide/ruby).
+
+We also have [guidelines for packaging gems][gem].
+
+## [Typography][type]
+
+[Typographic styles][type] used on GOV.UK
+
+[colours]: http://alphagov.github.com/design/gov.uk.colours
+[css]: /alphagov/styleguides/blob/master/css.md
+[gem]: /alphagov/wiki/wiki/Gem-guidelines
+[git]: /alphagov/styleguides/blob/master/git.md
+[html]: /alphagov/styleguides/blob/master/html.md
+[js]: /alphagov/styleguides/blob/master/js.md
+[pp]: /alphagov/styleguides/blob/master/puppet.md
+[rb]: /alphagov/styleguides/blob/master/ruby.md
+[type]: /http://alphagov.github.com/design/gov.uk.typography
