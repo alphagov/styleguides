@@ -64,3 +64,33 @@ should use `git merge`'s `--no-ff` option to preserve evidence of your feature
 branch in the repository history. This advice may be freely ignored for smaller
 local feature branches for which a fast-forward merge will look like any other
 routine development work on `master`.
+
+## Never call `git push -f` without additional arguments
+
+Force pushing in git is a subject that attracts all kinds of religious
+battles. This advice is not about the merits of force pushing.
+
+This is about how to use `git push -f` if and when you do use it.
+
+Let's say you're working on a branch, 'foobar', and you decide to force push
+to the remote. So you do this:
+
+    $ git push -f
+
+If anyone has committed anything to master[^1] since you last pulled -- and if
+you've been working on the branch for any length of time this is pretty likely
+-- you will blow their changes away, because without arguments git will force
+push *all* remote-tracking branches.
+
+So, if you ever need to force push the 'foobar' branch, please instead do
+
+    $ git push -f origin foobar
+
+You can also change git's default behaviour of pushing all tracked branches by
+doing `git config --global push.default upstream`, but you should probably get
+into the habit of typing out your intentions in full when doing a destructive
+operation like force pushing, otherwise disaster will strike when you use
+someone else's differently-configured git, or miss a step when configuring a
+new machine.
+
+[^1]: (or any other remote-tracking branch you have in your local copy)
