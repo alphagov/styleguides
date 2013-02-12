@@ -27,11 +27,11 @@ We also have [guidelines for packaging gems][gem].
 [Typographic styles][type] used on GOV.UK
 
 [colours]: http://alphagov.github.com/design/gov.uk.colours
-[css]: /alphagov/styleguides/blob/master/css.md
-[gem]: /alphagov/wiki/wiki/Gem-guidelines
-[git]: /alphagov/styleguides/blob/master/git.md
-[html]: /alphagov/styleguides/blob/master/html.md
-[js]: /alphagov/styleguides/blob/master/js.md
-[pp]: /alphagov/styleguides/blob/master/puppet.md
-[rb]: /alphagov/styleguides/blob/master/ruby.md
-[type]: /http://alphagov.github.com/design/gov.uk.typography
+[css]: css.md
+[gem]: https://github.com/alphagov/wiki/wiki/Gem-guidelines
+[git]: git.md
+[html]: html.md
+[js]: js.md
+[pp]: puppet.md
+[rb]: ruby.md
+[type]: http://alphagov.github.com/design/gov.uk.typography
