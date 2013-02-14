@@ -603,18 +603,10 @@
     email_with_name = "#{user.name} <#{user.email}>"
     ```
 
--   Use double-quoted strings. Most files will need some double-quoted strings,
-    so it’s more consistent.  Interpolation is in any case easy to see thanks
-    to syntax highlighting, and there is no speed advantage to using single
-    quotes.
-
-    ```ruby
-    # bad
-    name = 'Bozhidar'
-
-    # good
-    name = "Bozhidar"
-    ```
+-   Try not to mix up single-quoted and double-quoted strings within a file:
+    it can make the code harder to read. *Definitely* don't mix up single-quoted
+    and double-quoted strings within a method. If in doubt, use double-quoted
+    strings, because you’ll probably need to use interpolation somewhere.
 
 -   Avoid using `String#+` when you need to construct large data chunks.
     Instead, use `String#<<`. Concatenation mutates the string instance
