@@ -219,26 +219,13 @@
     end
     ```
 
--   Use the [Weirich block style](http://onestepback.org/index.cgi/Tech/Ruby/BraceVsDoEnd.rdoc):
-    `do...end` for blocks that perform actions (that have side effects) and
-    `{...}` for those that return a value. Avoid side-effects in a
-    functional-style block whose value you will use.
-
-    Freely use single-letter mnemonics for block variables within a single
+-   Freely use single-letter mnemonics for block variables within a single
     line.
 
     Never chain `do...end`.
 
     ```ruby
     names = ["Bozhidar", "Steve", "Sarah"]
-
-    # bad
-    names.each { |name| puts name }
-
-    # good
-    names.each do |name|
-      puts name
-    end
 
     # bad
     names.select do |name|
