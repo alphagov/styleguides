@@ -163,6 +163,8 @@
     Do not use `and`/`or` if the left-hand side of the expression is more
     complicated than a simple method call. Consider in the case above
     whether the exception could better be handled in save_changes.
+    
+    [Explanation of the difference between `&&` and `and`](http://blog.tinfoilsecurity.com/ruby-demystified-and-vs)
 
 -   Avoid multi-line `?:` (the ternary operator), use `if/unless`
     instead.
