@@ -27,7 +27,7 @@
        repos.
     2. Switch on resources based on the feature toggle in extdata:
        [puppet/modules/govuk/manifests/node/s_base.pp#LC25]
-       (https://github.com/alphagov/puppet/blob/master/modules/govuk/manifests/node/s_base.pp#LC25)
+       (https://github.gds/gds/puppet/blob/master/modules/govuk/manifests/node/s_base.pp#LC25)
     3. Where possible, create your switches at the machine manifest level (as 
        above) rather than within a module. 
 
@@ -150,4 +150,4 @@ available on the Infrastructure Wiki.
 When creating a service, it is desirable to also check that it is
 functioning correctly. Our standard for monitoring is Nagios. You can
 see more details of how to monitor a service with Nagios in the
-[nagios puppet module](https://github.com/alphagov/puppet/blob/master/modules/nagios/manifests/client/checks.pp)
+[nagios puppet module](https://github.gds/gds/puppet/blob/master/modules/nagios/manifests/client/checks.pp)
