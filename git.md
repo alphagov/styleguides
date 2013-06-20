@@ -2,6 +2,29 @@
 
 ## Commit messages
 
+### Content
+
+A good commit message briefly summarises the "what" for scanning purposes, but
+also includes the "why". If the "what" in the message isn't enough, the diff is
+there as a fallback. This isn't true for the "why" of a change - this can be
+much harder or impossible to reconstruct, but is often of great significance.
+
+#### Example
+
+``Set cache headers``
+
+prefer:
+
+```
+Set cache headers
+
+IE 6 was doing foo, so we need to do X.
+See http://example.com/why-is-this-broken for more details.
+```
+
+
+### Structure
+
 Commit messages should contain:
 
 * A short summary
@@ -13,7 +36,8 @@ Commit messages should contain:
   * Leave a blank line before
   * Hard-wrap lines at 72 characters
 
-### Example
+
+#### Example
 
 Taken from [Tim Pope’s guidelines](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
 
@@ -37,7 +61,7 @@ commands like git merge and git revert.
   single space, with blank lines in between, but conventions vary here
 > - Use a hanging indent
 
-## Branching/merging conventions
+### Branching/merging conventions
 
 You may often choose to work on a particular feature on a "feature branch"
 rather than directly on `master`. Indeed, given how cheap branches are in Git,
