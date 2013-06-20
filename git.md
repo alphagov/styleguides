@@ -4,7 +4,7 @@
 
 ### Content
 
-A good commit message briefly summarises that "what" for scanning purposes, but
+A good commit message briefly summarises the "what" for scanning purposes, but
 also includes the "why". If the "what" in the message isn't enough, the diff is
 there as a fallback. This isn't true for the "why" of a change - this can be
 much harder or impossible to reconstruct, but is often of great significance.
