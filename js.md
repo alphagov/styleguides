@@ -15,3 +15,7 @@ E.g `js-hidden`, `js-tab` etc. This makes it completely transparent what the cla
 ## Don't apply styles directly inside Javascript
 
 You should only ever apply CSS classes and style from there. Otherwise you risk clobbering user stylesheets and mixing concerns across different code bases. Also see the previous point.
+
+## Strict mode
+
+Add the `"use strict";` statement to the top of your scripts to enable [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode).
