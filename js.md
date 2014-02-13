@@ -19,3 +19,12 @@ You should only ever apply CSS classes and style from there. Otherwise you risk 
 ## Strict mode
 
 Add the `"use strict";` statement to the top of your scripts to enable [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode).
+
+## Let the project define the style
+
+As with most parts of software development, it's better to be consistent than perfect. If your
+repository already has a style then follow it.
+
+If you're looking for inspiration, we find the [Airbnb JavaScript style guide][airbnb-js] to be very sensible.
+
+[airbnb-js]: https://github.com/airbnb/javascript
