@@ -1,18 +1,18 @@
-# Javascript coding style
+# JavaScript coding style
 
 ## Use soft tabs with a two space indent
 
-This follows the other conventions used within our projects.
+This follows the conventions used within our other projects.
 
 ## Don't use CoffeeScript
 
-It's an extra abstraction and introduces extra languages for developers to learn. Using Javascript gives us guaranteed performance characteristics and more well known support paths.
+It's an extra abstraction and introduces another language for developers to learn. Using JavaScript gives us guaranteed performance characteristics and more well known support paths.
 
-## Use a `.js-` prefix for JS-only HTML classes
+## Use a `.js-` prefix for JavaScript-only HTML classes
 
-E.g `js-hidden`, `js-tab` etc. This makes it completely transparent what the class is used for within the HTML.
+Eg `js-hidden` or `js-tab`. This makes it completely transparent what the class is used for within the HTML.
 
-## Don't apply styles directly inside Javascript
+## Don't apply styles directly inside JavaScript
 
 You should only ever apply CSS classes and style from there. Otherwise you risk clobbering user stylesheets and mixing concerns across different code bases. Also see the previous point.
 
