@@ -163,7 +163,7 @@
     Do not use `and`/`or` if the left-hand side of the expression is more
     complicated than a simple method call. Consider in the case above
     whether the exception could better be handled in save_changes.
-    
+
     [Explanation of the difference between `&&` and `and`](http://blog.tinfoilsecurity.com/ruby-demystified-and-vs)
 
 -   Avoid multi-line `?:` (the ternary operator), use `if/unless`
@@ -570,6 +570,36 @@
     # good
     some_method one: 1, two: 2
     ```
+
+- Add a trailing comma to multi-line array and hash definitions
+  for clearer diffs with less line noise.
+
+  ```ruby
+    # bad
+    hash = {
+      one: 1,
+      two: 2
+    }
+
+    # good
+    hash = {
+      one: 1,
+      two: 2,
+    }
+
+    # bad
+    array = [
+      :one,
+      :two
+    ]
+
+    # good
+    array = [
+      :one,
+      :two,
+    ]
+
+  ```
 
 ## Strings
 
