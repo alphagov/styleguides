@@ -3,7 +3,7 @@
 ## HTML5
 
 * Always quote attribute values - the decision tree for remember when to
-  selectively quote is too much mental overhead, so just quote them.
+  selectively quote is too much mental overhead, so just quote them
 * Always use well-formed HTML - implicitly closed elements such as
   `<p>` cause unnecessary parsing overhead and can cause issues in
   accessibility
@@ -49,7 +49,7 @@ When using the `<section>` tag, add an `aria-labelledby` attribute linking to th
 
 Example:
 
-    <section labelledby="advice">
+    <section aria-labelledby="advice">
       <h1 id="advice">Help and advice</h1>
 
 ## Navigational elements
@@ -58,7 +58,7 @@ The detail of using the `<nav>` tag is covered in this [blog post](https://insid
 
 ### Emphasis
 
-If you want to give the current location emphasis within a navigational list, use a strong tag. 
+If you want to give the current location emphasis within a navigational list, use a `<strong>` tag.
 
 Example:
 
