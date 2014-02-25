@@ -49,7 +49,7 @@ When using the `<section>` tag, add an `aria-labelledby` attribute linking to th
 
 Example:
 
-    <section labelledby="advice">
+    <section aria-labelledby="advice">
       <h1 id="advice">Help and advice</h1>
 
 ## Navigational elements
