@@ -539,6 +539,26 @@
     STATES = %w(draft open closed)
     ```
 
+-   Instead of wrapping a long list of array elements to a newline, write
+    one element per line. This enhances readability and helps generate
+    clearer diffs.
+
+    ```ruby
+    # bad
+    ACTIONS = %w(create_new request_approval approve second_approval
+                publish archive)
+
+    # good
+    ACTIONS = %w(
+        create_new
+        request_approval
+        approve
+        second_approval
+        publish
+        archive
+    )
+    ```
+
 -   Use `Set` instead of `Array` when dealing with unique elements.
     `Set` implements a collection of unordered values with no
     duplicates. This is a hybrid of `Array`’s intuitive inter-operation
