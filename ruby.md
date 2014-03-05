@@ -221,10 +221,7 @@
     end
     ```
 
--   Freely use single-letter mnemonics for block variables within a single
-    line.
-
-    Never chain `do...end`.
+-   Never chain `do...end`.
 
     ```ruby
     names = ["Bozhidar", "Steve", "Sarah"]
@@ -235,7 +232,7 @@
     end.map { |name| name.upcase }
 
     # good
-    names.select { |n| n.start_with?("S") }.map(&:upcase)
+    names.select { |name| name.start_with?("S") }.map(&:upcase)
     ```
 
     Wrap long functional-style blocks after the `{ |var|`:
