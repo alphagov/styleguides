@@ -246,7 +246,7 @@
     # bad
     names.select do |name|
       name.start_with?("S")
-    end.map { |name| name.upcase }
+    end.map(&:upcase)
 
     # good
     names.select { |name| name.start_with?("S") }.map(&:upcase)
