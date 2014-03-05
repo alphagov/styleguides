@@ -221,10 +221,24 @@
     end
     ```
 
--   Freely use single-letter mnemonics for block variables within a single
-    line.
+-   Use single-letter variables with *extreme* caution. These are sometimes ok
+    in single-line blocks when the line itself explains what the variable is
+    for, but never in multi-line blocks or where the context isn't entirely
+    clear. If in any doubt, give your variables descriptive names.
 
-    Never chain `do...end`.
+    ```ruby
+    # ok
+    result_links = results.map { |r| r["link"] }
+
+    # bad
+    big_data = data.map { |k,v| v * 2 }
+
+    # bad
+    (1..10).each do |i|
+      # things
+    end
+
+-   Never chain `do...end`.
 
     ```ruby
     names = ["Bozhidar", "Steve", "Sarah"]
@@ -235,7 +249,7 @@
     end.map { |name| name.upcase }
 
     # good
-    names.select { |n| n.start_with?("S") }.map(&:upcase)
+    names.select { |name| name.start_with?("S") }.map(&:upcase)
     ```
 
     Wrap long functional-style blocks after the `{ |var|`:
