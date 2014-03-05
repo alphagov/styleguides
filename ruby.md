@@ -221,6 +221,23 @@
     end
     ```
 
+-   Use single-letter variables with *extreme* caution. These are sometimes ok
+    in single-line blocks when the line itself explains what the variable is
+    for, but never in multi-line blocks or where the context isn't entirely
+    clear. If in any doubt, give your variables descriptive names.
+
+    ```ruby
+    # ok
+    result_links = results.map { |r| r["link"] }
+
+    # bad
+    big_data = data.map { |k,v| v * 2 }
+
+    # bad
+    (1..10).each do |i|
+      # things
+    end
+
 -   Never chain `do...end`.
 
     ```ruby
