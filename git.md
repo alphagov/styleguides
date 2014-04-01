@@ -2,6 +2,21 @@
 
 ## Commit messages
 
+Writing good commit messages is important. Not just for yourself, but for other
+developers on your project. This includes:
+
+* New (or recently absent) developers who want to get up to speed on progress
+* Interested external parties who want to follow progress of the project
+* People in the public (remember, we code in the open) who want to see our work,
+  or learn from our practices
+* Any future developers (including yourself) who want to see why a change was
+  made
+
+### Recommended blog posts on this topic
+
+* [5 useful tips for a better commit message](http://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message)
+* [Every line of code is always documented](http://mislav.uniqpath.com/2014/02/hidden-documentation/)
+
 ### Content
 
 A good commit message briefly summarises the "what" for scanning purposes, but
