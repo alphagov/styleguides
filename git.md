@@ -5,11 +5,11 @@
 Writing good commit messages is important. Not just for yourself, but for other
 developers on your project. This includes:
 
-* New (or recently absent) developers who want to get up to speed on progress
-* Interested external parties who want to follow progress of the project
-* People in the public (remember, we code in the open) who want to see our work,
+* new (or recently absent) developers who want to get up to speed on progress
+* interested external parties who want to follow progress of the project
+* people in the public (remember, we code in the open) who want to see our work,
   or learn from our practices
-* Any future developers (including yourself) who want to see why a change was
+* any future developers (including yourself) who want to see why a change was
   made
 
 ### Recommended blog posts on this topic
@@ -40,16 +40,16 @@ See http://example.com/why-is-this-broken for more details.
 
 ### Structure
 
-Commit messages should contain:
+Commit messages should contain a:
 
-* A short summary
-  * Use no more than 50 characters
-  * Start with a capital letter
-  * Write in the present tense
-  * Do not add a full stop
-* A longer explanation, if needed
-  * Leave a blank line before
-  * Hard-wrap lines at 72 characters
+* short summary, where you:
+  * use no more than 50 characters
+  * start with a capital letter
+  * write in the present tense
+  * do not add a full stop
+* longer explanation, if needed, and:
+  * leave a blank line before
+  * hard-wrap lines at 72 characters
 
 
 #### Example
@@ -87,13 +87,13 @@ features](http://git-scm.com/book/en/Git-Tools-Rewriting-History) while working
 locally, in order to arrange your commits into appropriate logical chunks that
 will make sense to your fellow developers. In particular, you may find
 `git rebase --interactive` very useful. However, you should not rewrite commits
-that have been pushed unless:
+that have been pushed unless you:
 
-  * You are **very sure** that no-one else will be affected by you rewriting the
-    branch history, *or*
-  * You have an Extremely Good Reason. For example: someone has committed
+  * are **very sure** that no-one else will be affected by you rewriting the
+    branch history
+  * have an Extremely Good Reason. For example: someone has committed
     sensitive information (personally identifiable data, passwords and suchlike)
-    and it needs purging from history.
+    and it needs purging from history
 
 When merging from a feature branch to master (or any other mainline development
 branch), in particular one that has previously been shared with colleagues, you
