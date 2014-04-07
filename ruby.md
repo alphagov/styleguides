@@ -16,7 +16,9 @@
 
 -   Keep lines fewer than 80 characters.
 
--   Never leave trailing whitespace.
+-   Never leave trailing whitespace, except:
+
+-   Always leave a trailing newline in the file to keep compatibility with command-line tools.
 
 -   Use spaces around operators, after commas, colons and semicolons,
     around `{` and before `}`.
