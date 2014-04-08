@@ -18,7 +18,12 @@
 
 -   Never leave trailing whitespace, except:
 
--   Always leave a trailing newline in the file to keep compatibility with command-line tools.
+-   Always leave a trailing newline in the file to keep compatibility with
+    command-line tools. Some text editors will add this automatically;
+    Sublime Text will add it if you enable the
+    [`ensure_newline_at_eof_on_save`][newline-eof] setting.
+
+[newline-eof]: http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/settings.html#automatic-behavior
 
 -   Use spaces around operators, after commas, colons and semicolons,
     around `{` and before `}`.
