@@ -9,6 +9,7 @@
 * [Strict mode](#strict-mode)
 * [Chaining](#chaining)
 * [jQuery](#jquery)
+* [Method arguments](#method-arguments)
 * [Let the project define the style](#let-the-project-define-the-style)
 
 ## Whitespace
@@ -106,6 +107,33 @@ code before. This can cause people to misunderstand what a line is doing.
   **Why:** DOM queries are slow operations, especially if they are complicated.
   By caching the result of a jQuery object in a variable it reduces the number
   of queries you have to perform on the document.
+
+## Method arguments
+
+Favour named arguments in a object over sequential arguments.
+
+```javascript
+// Bad
+function addAutoSubmitToInput(input, action, timeout, debug){ ... }
+
+// Good
+function addAutoSubmitToInput(input, options){
+  var action = options.action,
+      timeout = options.timeout,
+      debug = options.debug;
+  ...
+}
+```
+
+**Why:** by using named options you don't necessarily have to read the
+internals of the method being called to work out what the arguments mean. Given
+a call to `addAutoSubmitToInput($input, './search', 20, false);` you would have
+to go to that method to find out what `20` or `false` mean. A call to
+`addAutoSubmitToInput($input, { action: './search', timeout: 20, debug: false
+})` gives you context as to what the arguments mean. It also makes it
+easier to refactor arguments without having to change all method calls.
+
+[Connascence of naming is a weaker form of connascence than connascence of position](http://en.wikipedia.org/wiki/Connascence_%28computer_programming%29#Types_of_connascence).
 
 ## Let the project define the style
 
