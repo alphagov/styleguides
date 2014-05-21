@@ -7,6 +7,7 @@
 * [HTML class hooks](#html-class-hooks)
 * [Styling elements](#styling-elements)
 * [Strict mode](#strict-mode)
+* [Chaining](#chaining)
 * [Let the project define the style](#let-the-project-define-the-style)
 
 ## Whitespace
@@ -51,6 +52,26 @@ mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Function
 Strict mode converts many mistakes, such as undefined varaibles, into errors
 which makes it easier to determine why things aren't working. It also forces
 scope so you don't accidently export globals.
+
+## Chaining
+
+Avoid creating long method chains.
+
+```javascript
+// Bad
+$('.something').find('.something-else').next('label').addClass('clickable').mousedown(doMousedownThing).click(doClickThing).click();
+
+// Good
+var $label = $('.something .something-else').next('label');
+
+$label.addClass('clickable');
+$label.mousedown(doMousedownthing);
+$label.click(doClickThing);
+doSomething();
+```
+
+**Why:** Long chains can be hard to understand for people who haven't read the
+code before. This can cause people to misunderstand what a line is doing.
 
 ## Let the project define the style
 
