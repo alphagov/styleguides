@@ -8,6 +8,7 @@
 * [Styling elements](#styling-elements)
 * [Strict mode](#strict-mode)
 * [Chaining](#chaining)
+* [jQuery](#jquery)
 * [Let the project define the style](#let-the-project-define-the-style)
 
 ## Whitespace
@@ -72,6 +73,39 @@ doSomething();
 
 **Why:** Long chains can be hard to understand for people who haven't read the
 code before. This can cause people to misunderstand what a line is doing.
+
+## jQuery
+
+* Prefix jQuery objects with a `$`.
+
+  ```javascript
+  // Bad
+  var list = $('.list');
+
+  //Good
+  var $list = $('.list');
+  ```
+
+  **Why:** for clarity between normal DOM objects and jQuery objects. This is
+  especially useful in function arguments as it is obvious a jQuery object needs
+  to be passed into that function.
+
+* Cache jQuery objects in varables.
+
+  ```javascript
+  // Bad
+  $('.list').click(...);
+  $('.list').addClass(...);
+
+  // Good
+  var $list = $('list');
+  $list.click(...);
+  $list.addClass(...);
+  ```
+
+  **Why:** DOM queries are slow operations, especially if they are complicated.
+  By caching the result of a jQuery object in a variable it reduces the number
+  of queries you have to perform on the document.
 
 ## Let the project define the style
 
