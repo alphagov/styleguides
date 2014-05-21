@@ -1,30 +1,63 @@
 # JavaScript coding style
 
-## Use soft tabs with a two space indent
+## Contents
 
-This follows the conventions used within our other projects.
+* [Whitespace](#whitespace)
+* [CoffeeScript](#coffeescript)
+* [HTML class hooks](#html-class-hooks)
+* [Styling elements](#styling-elements)
+* [Strict mode](#strict-mode)
+* [Let the project define the style](#let-the-project-define-the-style)
 
-## Don't use CoffeeScript
+## Whitespace
 
-It's an extra abstraction and introduces another language for developers to learn. Using JavaScript gives us guaranteed performance characteristics and more well known support paths.
+Use soft tabs with a two space indent.
 
-## Use a `.js-` prefix for JavaScript-only HTML classes
+**Why:** This follows the conventions used within our other projects.
 
-Eg `js-hidden` or `js-tab`. This makes it completely transparent what the class is used for within the HTML.
+## CoffeeScript
 
-## Don't apply styles directly inside JavaScript
+Don't use CoffeeScript.
 
-You should only ever apply CSS classes and style from there. Otherwise you risk clobbering user stylesheets and mixing concerns across different code bases. Also see the previous point.
+**Why:** It's an extra abstraction and introduces another
+language for developers to learn. Using JavaScript gives us guaranteed
+performance characteristics and more well known support paths.
+
+## HTML class hooks
+
+When attaching JavaScript to the DOM use a `.js-` prefix for the HTML classes.
+
+Eg `js-hidden` or `js-tab`.
+
+**Why:** This makes it completely transparent what the class is used for within
+the HTML. It also makes it much easier to search in a project to remove old
+behaviour.
+
+## Styling elements
+
+Don't apply styles directly inside JavaScript. You should only ever apply CSS
+classes and style from there.
+
+**Why:** This reduces the risk of clobbering user stylesheets and mixing
+concerns across different code bases. Also see [HTML class
+hooks](#html-class-hooks).
 
 ## Strict mode
 
-Add the `"use strict";` statement to the top of your scripts to enable [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode).
+You should add the `"use strict";` statement to the top of your module functions.
+
+**Why:** This enables [strict
+mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode).
+Strict mode converts many mistakes, such as undefined varaibles, into errors
+which makes it easier to determine why things aren't working. It also forces
+scope so you don't accidently export globals.
 
 ## Let the project define the style
 
-As with most parts of software development, it's better to be consistent than perfect. If your
-repository already has a style then follow it.
+As with most parts of software development, it's better to be consistent than
+perfect. If your repository already has a style then follow it.
 
-If you're looking for inspiration, we find the [Airbnb JavaScript style guide][airbnb-js] to be very sensible.
+If you're looking for inspiration, we find the [Airbnb JavaScript style
+guide][airbnb-js] to be very sensible.
 
 [airbnb-js]: https://github.com/airbnb/javascript
