@@ -3,6 +3,7 @@
 ## Contents
 
 * [Whitespace](#whitespace)
+* [Naming conventions](#naming-conventions)
 * [CoffeeScript](#coffeescript)
 * [HTML class hooks](#html-class-hooks)
 * [Styling elements](#styling-elements)
@@ -17,6 +18,58 @@
 Use soft tabs with a two space indent.
 
 **Why:** This follows the conventions used within our other projects.
+
+## Naming conventions
+
+* Avoid single letter names. Be descriptive with your naming.
+
+  ```javascript
+  // Bad
+  var n = "thing";
+  function q() { ... }
+
+  // Good
+  var name = "thing";
+  function query() { ... }
+  ```
+
+  **Why:** Descriptive names help future developers pick up parts of the code
+  faster without having to read it all.
+
+* Use camelCase when naming objects, functions, and instances. Use PascalCase
+  when naming constructors or classes.
+
+  ```javascript
+  // Bad
+  var this_is_my_object = {};
+  var THISIsMyVariable = "thing";
+  function ThisIsMyFunction() { ... }
+
+  // Good
+  var thisIsMyObject = {};
+  var thisIsMyVariable = "thing";
+  function thisIsMyFunction() { ... }
+
+  // Bad
+  function user(options) {
+    this.name = options.name;
+  }
+  var Bob = new user({
+    name: 'Bob Parr'
+  });
+
+  // Good
+  function User(options) {
+    this.name = options.name;
+  }
+  var bob = new User({
+    name: 'Bob Parr'
+  });
+  ```
+
+  **Why:** This lets future developers know how to interact with objects and
+  sets the appropriate affordances. It also follows the conventions of the
+  standard library.
 
 ## CoffeeScript
 
