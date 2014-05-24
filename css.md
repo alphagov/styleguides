@@ -5,6 +5,7 @@
 * [Whitespace](#whitespace)
 * [Dimensions](#dimensions)
 * [Bleading edge features](#bleading-edge-features)
+* [Sass nesting](#sass-nesting)
 
 ## Whitespace
 
@@ -76,4 +77,41 @@ in the frontend_toolit][css3.scss].
 the vendor prifixed properties in one place. We can also then remove them and
 add warnings to let future developers know they can remove the prefixes in the
 future when the vendor prefixed versions aren't needed.
+
+## Sass nesting
+
+Always define parent reference selectors before defining child selectors
+
+```sass
+// Bad
+a {
+  color: red;
+
+  .span {
+    color: blue;
+  }
+
+  &:hover {
+    color: pink;
+  }
+}
+
+// Good
+a {
+  color: red;
+
+  &:hover {
+    color: pink;
+  }
+
+  .span {
+    color: blue;
+  }
+}
+```
+
+**Why:** by putting parent reference selectors first it keeps the styling for
+that element together. By putting styling for other elements in the middle you
+have to scroll around watching nesting levels to try and figure out what the
+`&` references.
 
