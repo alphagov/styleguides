@@ -147,7 +147,7 @@ Modules should be wrapped in a closure and attach themselves to the global
 }());
 ```
 
-**Why:** attaching to the `GOVUK` object keeps us from polutiing the global
+**Why:** attaching to the `GOVUK` object keeps us from polluting the global
 namespace. Checking for or creating the `GOVUK` object means the module can
 be reused on any project (internal or external) without having to modify it.
 You get the benefits of [strict mode](#strict-mode) which include stopping your
