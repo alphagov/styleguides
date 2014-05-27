@@ -9,6 +9,8 @@
 * [Styling elements](#styling-elements)
 * [Strict mode](#strict-mode)
 * [Chaining](#chaining)
+* [Modules](#modules)
+* [Module structure](#module-structure)
 * [jQuery](#jquery)
 * [Method arguments](#method-arguments)
 * [Let the project define the style](#let-the-project-define-the-style)
@@ -127,6 +129,72 @@ doSomething();
 
 **Why:** Long chains can be hard to understand for people who haven't read the
 code before. This can cause people to misunderstand what a line is doing.
+
+## Modules
+
+Modules should be wrapped in a closure and attach themselves to the global
+`GOVUK` object.
+
+```
+(function() {
+  "use strict";
+  window.GOVUK = window.GOVUK || {};
+  var $ = window.jQuery;
+
+  ...
+
+  GOVUK.myModule = ...
+}());
+```
+
+**Why:** attaching to the `GOVUK` object keeps us from polutiing the global
+namespace. Checking for or creating the `GOVUK` object means the module can
+be reused on any project (internal or external) without having to modify it.
+You get the benefits of [strict mode](#strict-mode) which include stopping your
+module from leaking variables into the global scope.
+
+## Module structure
+
+Module logic should be broken down into small testable functions. The functions
+should be exposed as methods on the module rather than hidden inside a closure.
+
+```
+// Bad
+function myModule($element){
+  function showThing(){ .. }
+  function hideThing(){ .. }
+  function submitThing(){ .. }
+  function getArgumentsForThing(){ .. }
+
+  $element.click(submitThing);
+}
+
+// Good
+function MyModule($element){
+  $element.click($.bind(this.submitThing, this));
+}
+MyModuleThing.prototype.showThing = function(){ .. }
+MyModuleThing.prototype.hideThing = function(){ .. }
+MyModuleThing.prototype.submitThing = function(){ .. }
+MyModuleThing.prototype.getArgumentsForThing = function(){ .. }
+
+// Good
+GOVUK.myModule = {
+  showThing: function(){ .. },
+  hideThing: function(){ .. },
+  submitThing: function(){ .. },
+  getArgumentsForThing: function(){ .. },
+  init: function($element){
+    $element.click(GOVUK.myModule.submitThing);
+  }
+}
+```
+
+**Why:** Having small well named functions lets developers who are unfamiliar
+with the code understand what is going on faster. Having logic in small
+functions makes it easier to unit test each of those functions to prove they
+performs as expected. Having those functions exposed as methods on the module
+makes it possible to test those functions in isolation.
 
 ## jQuery
 
