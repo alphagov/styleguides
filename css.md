@@ -1,30 +1,117 @@
 ## CSS Coding Style
 
--   Use comments to divide and clarify what groups of declarations are for
+## Contents
 
--   Dimensions: use ems to 2 decimal places to [support IE6 and 7](http://destination-code.blogspot.co.uk/2008/10/font-size-relative-length-unit-em.html)
+* [Whitespace](#whitespace)
+* [Dimensions](#dimensions)
+* [Bleading edge features](#bleading-edge-features)
+* [Sass nesting](#sass-nesting)
 
--   Use soft-tabs with a two space indent.
+## Whitespace
 
--   When declaring bleeding edge new features, make sure to use browser prefixes, and that the 'final' proposed attribute name is declared last
+Use soft tabs with a two space indent.
 
-    For example:
+**Why:** This follows the conventions used within our other projects.
 
-    ```css
-    -moz-border-radius: xx;
-    -webkit-border-radius: xx;
-    border-radius: xx;
-    ```
+## Dimensions
 
-Before using any such features, check there isn't an existing mixin for it in the [govuk_frontend_toolkit](https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_css3.scss). If there isn't one, consider adding it in the existing style.
+* Dimensions for layout should either use the [variables from the
+  frontend_toolkit][measurements.scss] or be in pixel values in multiples of `5px`.
 
-## REM sizing
+  [measurements.scss]: https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_measurements.scss
 
-Firefox allows users to change the minimum font-size which can effect the font-size specified for the html element, the size that 1 REM is based on. Usage of REMs is often based on the assumption that this will not change so it can cause unexpected results. See this [pull request](https://github.com/alphagov/frontend/pull/385) for details.
+  ```css
+  // Bad
+  .block {
+    margin: 28px;
+  }
+  .block {
+    padding: 12px 19px;
+  }
 
-If you do use REMs bear in mind they are not supported in IE6, 7 & 8 so you will have to include a pixel value before each REM value for those browsers.
+  // Good
+  .block {
+    margin: $gutter;
+  }
+  .block {
+    padding: 10px 20px;
+  }
+  ```
 
-Example:
+  **Why:** consistent measurements are better at ensuring all elements on the
+  page line up in a visually apealing manor. Pixels are used over `em` or `rem`
+  because they are consistent and predictable. 
 
-    font-size: 12px;
-    font-size: 1.2rem; /* This line is ignored by IE6, 7 & 8 */
+* Avoid using rem sizing
+
+  **Why:** Firefox allows users to change the minimum allowed font-size which
+  forces the font-size on the `html` element to be at least that minimum. Rem
+  sizes are worked out as a multiplier on the `html` elements font-size. Unless
+  you are sizing everything in rem units this can cause rems to be much much
+  bigger than you are expecting. See this [pull
+  request](https://github.com/alphagov/frontend/pull/385) for details.
+
+  If you do use rems bear in mind they are not supported in IE6, 7 & 8 so you
+  will have to include a pixel value before each rem value for those browsers.
+
+  ```css
+  font-size: 12px;
+  font-size: 1.2rem; /* This line is ignored by IE6, 7 & 8 */
+  ```
+
+
+## Bleading edge features
+
+When using bleeding edge featues which require vendor prefixes use the [mixins
+in the frontend_toolit][css3.scss].
+
+[css3.scss]: https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_css3.scss
+
+```css
+.button {
+  @include border-radius(5px);
+}
+```
+
+**Why:** By keeping vendor prefixes in one place we can easily add or update
+the vendor prifixed properties in one place. We can also then remove them and
+add warnings to let future developers know they can remove the prefixes in the
+future when the vendor prefixed versions aren't needed.
+
+## Sass nesting
+
+Always define parent reference selectors before defining child selectors
+
+```sass
+// Bad
+a {
+  color: red;
+
+  .span {
+    color: blue;
+  }
+
+  &:hover {
+    color: pink;
+  }
+}
+
+// Good
+a {
+  color: red;
+
+  &:hover {
+    color: pink;
+  }
+
+  .span {
+    color: blue;
+  }
+}
+```
+
+**Why:** by putting parent reference selectors first it keeps the styling for
+that element together. By putting styling for other elements in the middle you
+have to scroll around watching nesting levels to try and figure out what the
+`&` references.
+
