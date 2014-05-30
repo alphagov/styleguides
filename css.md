@@ -4,7 +4,7 @@
 
 * [Whitespace](#whitespace)
 * [Dimensions](#dimensions)
-* [Bleading edge features](#bleading-edge-features)
+* [Bleeding edge features](#bleeding-edge-features)
 * [Sass nesting](#sass-nesting)
 
 ## Whitespace
@@ -60,7 +60,7 @@ Use soft tabs with a two space indent.
   ```
 
 
-## Bleading edge features
+## Bleeding edge features
 
 When using bleeding edge featues which require vendor prefixes use the [mixins
 in the frontend_toolit][css3.scss].
