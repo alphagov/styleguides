@@ -63,7 +63,7 @@ Use soft tabs with a two space indent.
 ## Bleeding edge features
 
 When using bleeding edge featues which require vendor prefixes use the [mixins
-in the frontend_toolit][css3.scss].
+in the frontend_toolkit][css3.scss].
 
 [css3.scss]: https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_css3.scss
 
