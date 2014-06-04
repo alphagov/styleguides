@@ -24,25 +24,27 @@ Some good reasons to ignore a particular guideline:
 4. When the code needs to remain compatible with older versions of Ruby that
    don't support the feature recommended by the style guide.
 
+*The rules in this guide are annotated with their corresponding Rubocop validators.*
+
 ## General
 
 -   Write for Ruby 1.9.
 
--   Use soft-tabs with a two-space indent.
+-   Use soft-tabs with a two-space indent. (*Tab,IndentationWidth,IndentationConsistency,BlockAlignment,ElseLayout,EndAlignment*)
 
--   Keep lines fewer than 80 characters.
+-   Keep lines fewer than 80 characters. (*LineLength*)
 
--   Never leave trailing whitespace, except:
+-   Never leave trailing whitespace, except: (*TrailingWhitespace,EmptyLines,EndOfLine*)
 
 -   Always leave a trailing newline in the file to keep compatibility with
     command-line tools. Some text editors will add this automatically;
     Sublime Text will add it if you enable the
-    [`ensure_newline_at_eof_on_save`][newline-eof] setting.
+    [`ensure_newline_at_eof_on_save`][newline-eof] setting. (*TrailingBlankLines*)
 
 [newline-eof]: http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/settings.html#automatic-behavior
 
 -   Use spaces around operators, after commas, colons and semicolons,
-    around `{` and before `}`.
+    around `{` and before `}`. (*SpaceAroundOperators, SpaceBeforeBlockBraces, SpaceAfterSemicolon, SpaceAfterColon, SpaceAfterComma*)
 
     ```ruby
     sum = 1 + 2
@@ -51,14 +53,14 @@ Some good reasons to ignore a particular guideline:
     [1, 2, 3].each { |e| puts e }
     ```
 
--   No spaces after `(`, `[` or before `]`, `)`.
+-   No spaces after `(`, `[` or before `]`, `)`. (*SpaceInsideBrackets,SpaceInsideParens*)
 
     ```ruby
     some(arg).other
     [1, 2, 3].length
     ```
 
--   Indent `when` as deep as `case`.
+-   Indent `when` as deep as `case`. (*CaseIndentation*)
 
     ```ruby
     case
@@ -83,7 +85,7 @@ Some good reasons to ignore a particular guideline:
     ```
 
 -   Use empty lines between `def`s and to break up a method into logical
-    paragraphs.
+    paragraphs. (*EmptyLineBetweenDefs*)
 
     ```ruby
     def some_method
@@ -137,7 +139,7 @@ Some good reasons to ignore a particular guideline:
 ## Syntax
 
 -   Use `def` with parentheses when there are arguments. Omit the
-    parentheses when the method doesn’t accept any arguments.
+    parentheses when the method doesn’t accept any arguments. (*DefWithParentheses,MethodCallParentheses*)
 
     ```ruby
     def some_method
@@ -149,7 +151,7 @@ Some good reasons to ignore a particular guideline:
     end
     ```
 
--   Never use `for`. This includes in templates. Use iterators instead.
+-   Never use `for`. This includes in templates. Use iterators instead. (*For*)
 
     ```ruby
     arr = [1, 2, 3]
@@ -165,7 +167,7 @@ Some good reasons to ignore a particular guideline:
     end
     ```
 
--   Never use `then` for multi-line `if/unless`.
+-   Never use `then` for multi-line `if/unless`. (*MultilineIfThen*)
 
     ```ruby
     # bad
@@ -182,7 +184,7 @@ Some good reasons to ignore a particular guideline:
 -   Avoid the ternary operator (`?:`) except in cases where all
     expressions are extremely trivial. However, do use the ternary
     operator(`?:`) over `if/then/else/end` constructs for single line
-    conditionals.
+    conditionals. (*OneLineConditional*)
 
     ```ruby
     # bad
@@ -194,7 +196,7 @@ Some good reasons to ignore a particular guideline:
 
 -   Use one expression per branch in a ternary operator. This also means
     that ternary operators must not be nested. Prefer `if/else`
-    constructs in these cases.
+    constructs in these cases. (*NestedTernaryOperator*)
 
     ```ruby
     # bad
@@ -209,7 +211,7 @@ Some good reasons to ignore a particular guideline:
     ```
 
 -   Always use `&&` and `||` for logic. The `and` and `or` keywords should be
-    used only for control flow, and only in simple cases.
+    used only for control flow, and only in simple cases. (*AndOr*)
 
     ```ruby
     def some_method
@@ -225,9 +227,9 @@ Some good reasons to ignore a particular guideline:
     [Explanation of the difference between `&&` and `and`](http://blog.tinfoilsecurity.com/ruby-demystified-and-vs)
 
 -   Avoid multi-line `?:` (the ternary operator), use `if/unless`
-    instead.
+    instead.(*MultilineTernaryOperator*)
 
--   Favor modifier `if/unless` usage when you have a single-line body.
+-   Favor modifier `if/unless` usage when you have a single-line body. (*IfUnlessModifier*)
 
     ```ruby
     # bad
@@ -240,7 +242,7 @@ Some good reasons to ignore a particular guideline:
     ```
 
 -   Never use `unless` with `else`. Rewrite these with the positive case
-    first.
+    first. (*UnlessElse*)
 
     ```ruby
     # bad
@@ -260,7 +262,7 @@ Some good reasons to ignore a particular guideline:
 
 -   Don’t use parentheses around the condition of an `if/unless/while`,
     unless the condition contains an assignment (see "Using the return
-    value of `=`" below).
+    value of `=`" below). (*ParenthesesAroundCondition*)
 
     ```ruby
     # bad
@@ -296,7 +298,7 @@ Some good reasons to ignore a particular guideline:
       # things
     end
 
--   Never chain `do...end`.
+-   Never chain `do...end`. (*MethodCalledOnDoEndBlock, MultilineBlockChain*)
 
     ```ruby
     names = ["Bozhidar", "Steve", "Sarah"]
@@ -331,7 +333,7 @@ Some good reasons to ignore a particular guideline:
     names.map(&:upcase)
     ```
 
--   Avoid `return` where not required.
+-   Avoid `return` where not required. (*RedundantReturn*)
 
     ```ruby
     # bad
@@ -346,7 +348,7 @@ Some good reasons to ignore a particular guideline:
     ```
 
 -   Use spaces around the `=` operator when assigning default values to
-    method parameters:
+    method parameters: (*SpaceAroundEqualsInParameterDefault*)
 
     ```ruby
     # bad
@@ -400,7 +402,7 @@ Some good reasons to ignore a particular guideline:
     scripts is discouraged. Prefer long form versions such as
     `$PROGRAM_NAME`.
 
--   Never put a space between a method name and the opening parenthesis.
+-   Never put a space between a method name and the opening parenthesis. (*SpaceAfterMethodName*)
 
     ```ruby
     # bad
@@ -414,7 +416,7 @@ Some good reasons to ignore a particular guideline:
     always use parentheses in the method invocation. For example, write
     `f((3 + 2) + 1)`.
 
--   Use `_` for unused block parameters.
+-   Use `_` for unused block parameters. (*UnusedBlockArgument*)
 
     ```ruby
     # bad
@@ -426,12 +428,12 @@ Some good reasons to ignore a particular guideline:
 
 ## Naming
 
--   Use `snake_case` for methods and variables.
+-   Use `snake_case` for methods and variables. (*VariableName, MethodName*)
 
 -   Use `CamelCase` for classes and modules. (Keep acronyms like HTTP,
-    RFC, XML uppercase.)
+    RFC, XML uppercase.) (*ClassAndModuleCamelCase*)
 
--   Use `SCREAMING_SNAKE_CASE` for other constants.
+-   Use `SCREAMING_SNAKE_CASE` for other constants. (*ConstantName*)
 
 -   The names of predicate methods (methods that return a boolean value)
     should end in a question mark. (i.e. `Array#empty?`).
@@ -444,7 +446,7 @@ Some good reasons to ignore a particular guideline:
 
 -   Avoid get/set method names: these are better implemented using Ruby's
     assignment syntax sugar. Use `attr_reader`, `attr_writer`, and
-    `attr_accessor` for simple instance variable accessors.
+    `attr_accessor` for simple instance variable accessors. (*TrivialAccessors*)
 
     ```ruby
     # bad
@@ -469,7 +471,7 @@ Some good reasons to ignore a particular guideline:
 ## Classes
 
 -   Avoid the usage of class (`@@`) variables due to their "nasty"
-    behavior in inheritance.
+    behavior in inheritance. (*ClassVars*)
 
     ```ruby
     class Parent
@@ -492,7 +494,7 @@ Some good reasons to ignore a particular guideline:
     preferred over class variables.
 
 -   Use `def self.method` to define singleton methods. This makes the
-    methods more resistant to refactoring changes.
+    methods more resistant to refactoring changes. (*ClassMethods*)
 
     ```ruby
     class TestClass
@@ -580,7 +582,7 @@ Some good reasons to ignore a particular guideline:
     end
     ```
 
--   Avoid rescuing the `Exception` class.
+-   Avoid rescuing the `Exception` class. (*RescueException*)
 
     ```ruby
     # bad
@@ -601,7 +603,7 @@ Some good reasons to ignore a particular guideline:
 ## Collections
 
 -   Prefer `%w` to the literal array syntax when you need an array of
-    strings.
+    strings. (*WordArray*)
 
     ```ruby
     # bad
@@ -613,7 +615,7 @@ Some good reasons to ignore a particular guideline:
 
 -   Instead of wrapping a long list of array elements to a newline, write
     one element per line. This enhances readability and helps generate
-    clearer diffs.
+    clearer diffs. (*AlignArray*)
 
     ```ruby
     # bad
@@ -647,7 +649,7 @@ Some good reasons to ignore a particular guideline:
     hash = {one: 1, two: 2, three: 3}
     ```
 
-- Use Ruby 1.9 syntax for symbolic hash keys. This includes method calls.
+- Use Ruby 1.9 syntax for symbolic hash keys. This includes method calls. (*HashSyntax*)
 
     ```ruby
     # bad
@@ -664,7 +666,7 @@ Some good reasons to ignore a particular guideline:
     ```
 
 - Add a trailing comma to multi-line array and hash definitions
-  for clearer diffs with less line noise.
+  for clearer diffs with less line noise. (*TrailingComma*)
 
   ```ruby
     # bad
@@ -695,7 +697,7 @@ Some good reasons to ignore a particular guideline:
 
 ## Strings
 
--   Prefer string interpolation instead of string concatenation:
+-   Prefer string interpolation instead of string concatenation: (*StringConversionInInterpolation*)
 
     ```ruby
     # bad
@@ -708,7 +710,7 @@ Some good reasons to ignore a particular guideline:
 -   Try not to mix up single-quoted and double-quoted strings within a file:
     it can make the code harder to read. *Definitely* don't mix up single-quoted
     and double-quoted strings within a method. If in doubt, use double-quoted
-    strings, because you’ll probably need to use interpolation somewhere.
+    strings, because you’ll probably need to use interpolation somewhere. (*StringLiterals*)
 
 -   Avoid using `String#+` when you need to construct large data chunks.
     Instead, use `String#<<`. Concatenation mutates the string instance
