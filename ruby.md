@@ -28,14 +28,6 @@ Some good reasons to ignore a particular guideline:
 
 -   Write for Ruby 1.9.
 
--   Lock dependencies in Gemfiles to specific versions.
-
-    ```gem "rails", "3.2.7"```
-
-    not
-
-    ```gem "rails", "~> 3.2.7"```
-
 -   Use soft-tabs with a two-space indent.
 
 -   Keep lines fewer than 80 characters.
@@ -106,6 +98,41 @@ Some good reasons to ignore a particular guideline:
       result
     end
     ```
+
+## Gemfile
+
+-   Where a gem is trusted to follow [semantic versioning](http://semver.org/),
+    (i.e. the maintainer of the gem is trusted not to break functionality in
+    minor or patch releases), use pessimistic version locking in your Gemfile,
+    e.g.
+
+    ```gem "json", "~> 1.8.1"```
+
+    not
+
+    ```gem "json", "1.8.1"```
+
+    This makes it easier for Bundler to resolve inter-gem dependencies and also
+    makes it easier to update gems to be their latest patch release without
+    having to manually bump versions numbers in your Gemfile.
+
+-   If the gem is not trusted to follow semantic versioning, or needs to be
+    locked to a specific release, use exact versioning, e.g.
+
+    ```gem "rails", "3.2.18"```
+
+-   Framework gems (e.g. Rails, Sinatra) will almost always want to be locked
+    to a specific version as frameworks are especially likely to introduce
+    breaking changes in new releases. They should be updated manually as and
+    when it is required and/or appropriate.
+
+-   When you need to include an unreleased gem in your Gemfile, always lock it
+    to a tag or specific commit, e.g.
+
+    ```gem 'globalize3', github: 'globalize/globalize', ref: 'ab69160ad'```
+
+-   See [A Healthy Bundle](http://robots.thoughtbot.com/a-healthy-bundle) for
+    more details on when to use exact and pessimistic versioning.
 
 ## Syntax
 
