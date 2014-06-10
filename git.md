@@ -37,6 +37,19 @@ IE 6 was doing foo, so we need to do X.
 See http://example.com/why-is-this-broken for more details.
 ```
 
+#### Links to issue trackers
+
+A link to a ticket in an issue tracker should not be seen as an alternative to
+writing a commit message.
+
+While a link can add some extra context for people reviewing
+a pull-request, the commit message should stand on its own.  There's no guarantee that
+the link will continue to work in the future when someone is looking through the commit
+history to understand why a change was made.
+
+If you are adding a link to a publicly viewable repository, ensure that the linked
+ticket is publicly viewable (and likely to remain so).
+
 
 ### Structure
 
@@ -76,7 +89,7 @@ commands like git merge and git revert.
   single space, with blank lines in between, but conventions vary here
 > - Use a hanging indent
 
-### Branching/merging conventions
+## Branching/merging conventions
 
 You may often choose to work on a particular feature on a "feature branch"
 rather than directly on `master`. Indeed, given how cheap branches are in Git,
