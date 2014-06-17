@@ -108,6 +108,13 @@ that have been pushed unless you:
     sensitive information (personally identifiable data, passwords and suchlike)
     and it needs purging from history
 
+When in doubt you should err towards smaller commits, which can be rebased
+together later. It's harder to break large commits out into smaller chunks.
+
+The smaller commits should still be logical chunks, but this will give context
+for a more specific change and make git tools like `annotate` and `log` more
+useful.
+
 When merging from a feature branch to master (or any other mainline development
 branch), in particular one that has previously been shared with colleagues, you
 should use `git merge`'s `--no-ff` option to preserve evidence of your feature
