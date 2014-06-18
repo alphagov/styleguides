@@ -7,26 +7,25 @@
 
 ## Things that should not be in the Puppet Repo
 
--   **Secrets.** It is bad practise to embed your secret data (passwords, 
-    tokens) within Puppet. To do so means that even if you specify that a 
+-   **Secrets.** It is bad practice to embed your secret data (passwords, 
+    tokens etc.) within Puppet. To do so means that even if you specify that a 
     secret applies to one particular environment it is available on the 
     PuppetMaster for every environment. It is good practise to store 
-    secrets in the `deployment` repo at `puppet/extdata/${environment}.csv`. 
-    Please make sure where necessary you have different secrets for each 
-    value.
+    secrets in the `deployment` repo at `Puppet/hieradata/${environment}.yaml`.
+    Please make sure where necessary you have different secrets for each value.
     
--   **Per Environment switches**. The puppet repo should not know the 
+-   **Per-environment switches**. The Puppet repo should not know the 
     specifics of each environment. By switching on platform or environment
     variables, you make it difficult to add new platforms and hard to ensure
     that consistent behaviour is applied across all environments. To apply a 
     catalog item to a subset of environments you should:
-    1. Add a feature toggle to extdata (default goes in `common.csv`, per 
-       environment value goes in `${environment}.csv`. Be aware that 
-       extdata for environments is in the `deployment` repo, but extdata for 
-       `development` is in the development repo. `common.csv` exists in both
-       repos.
-    2. Switch on resources based on the feature toggle in extdata:
-       [puppet/modules/govuk/manifests/node/s_base.pp#LC25]
+    1. Add a feature toggle to Hiera (default goes in `common.yaml`, per 
+       environment value goes in `${environment}.yaml`. Be aware that 
+       Hiera data for environments is in the `deployment` repo, but
+       Hieradata for `development` is in the development repo. `common.yaml`
+       exists in both repos.
+    2. Switch on resources based on the feature toggle in Hieradata:
+       [Puppet/modules/govuk/manifests/node/s_base.pp#LC25]
        (https://github.gds/gds/puppet/blob/master/modules/govuk/manifests/node/s_base.pp#LC25)
     3. Where possible, create your switches at the machine manifest level (as 
        above) rather than within a module. 
@@ -78,7 +77,7 @@ the box:
         notify  => Class['smoke-tests'],
     }
 
-But by default this will not do what you want, because puppet
+But by default this will not do what you want, because Puppet
 dependencies between classes don't work the obvious way. If the
 `nginx` class includes `nginx::package`, `nginx::config`, and
 `nginx::service`, then these classes will not inherit the `require`
@@ -130,7 +129,7 @@ would simply not be passed on to the included classes such as
 `Class[nginx::package]`.
 
 More information on the anchor pattern can be found on
-[the puppet wiki](http://projects.puppetlabs.com/projects/puppet/wiki/Anchor_Pattern).
+[the Puppet wiki](http://projects.puppetlabs.com/projects/puppet/wiki/Anchor_Pattern).
 
 (NB the anchor type in puppetstdlib
 [does not propagate refresh events](http://projects.puppetlabs.com/issues/12510),
@@ -150,4 +149,4 @@ available on the Infrastructure Wiki.
 When creating a service, it is desirable to also check that it is
 functioning correctly. Our standard for monitoring is Nagios. You can
 see more details of how to monitor a service with Nagios in the
-[nagios puppet module](https://github.gds/gds/puppet/blob/master/modules/nagios/manifests/client/checks.pp)
+[nagios Puppet module](https://github.gds/gds/puppet/blob/master/modules/nagios/manifests/client/checks.pp)
