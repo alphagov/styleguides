@@ -8,7 +8,7 @@
 ## Things that should not be in the Puppet Repo
 
 -   **Secrets.** It is bad practice to embed your secret data (passwords, 
-    tokens) within Puppet. To do so means that even if you specify that a 
+    tokens etc.) within Puppet. To do so means that even if you specify that a 
     secret applies to one particular environment it is available on the 
     PuppetMaster for every environment. It is good practise to store 
     secrets in the `deployment` repo at `Puppet/hieradata/${environment}.yaml`.
