@@ -12,14 +12,14 @@ Alias:
 
 AlignHash:
   Description: >-
-		 Align the elements of a hash literal if they span more than
-		 one line.
+    Align the elements of a hash literal if they span more than
+    one line.
   Enabled: false
 
 AlignParameters:
   Description: >-
-		 Align the parameters of a method call if they span more
-		 than one line.
+    Align the parameters of a method call if they span more
+    than one line.
   Enabled: false
 
 ArrayJoin:
@@ -52,9 +52,9 @@ BlockNesting:
 
 Blocks:
   Description: >-
-		Avoid using {...} for multi-line blocks (multiline chaining is
-		always ugly).
-		Prefer {...} over do...end for single-line blocks.
+    Avoid using {...} for multi-line blocks (multiline chaining is
+    always ugly).
+    Prefer {...} over do...end for single-line blocks.
   Enabled: false
 
 BracesAroundHashParameters:
@@ -87,8 +87,8 @@ ColonMethodCall:
 
 CommentAnnotation:
   Description: >-
-		 Checks formatting of special comments
-		 (TODO, FIXME, OPTIMIZE, HACK, REVIEW).
+    Checks formatting of special comments
+    (TODO, FIXME, OPTIMIZE, HACK, REVIEW).
   Enabled: false
 
 CommentIndentation:
@@ -169,8 +169,8 @@ IfWithSemicolon:
 
 IndentArray:
   Description: >-
-		 Checks the indentation of the first element in an array
-		 literal.
+    Checks the indentation of the first element in an array
+    literal.
   Enabled: false
 
 IndentHash:
@@ -191,14 +191,14 @@ LeadingCommentSpace:
 
 LineEndConcatenation:
   Description: >-
-		 Use \ instead of + or << to concatenate two string literals at
-		 line end.
+    Use \ instead of + or << to concatenate two string literals at
+    line end.
   Enabled: false
 
 MethodDefParentheses:
   Description: >-
-		 Checks if the method definitions have or don't have
-		 parentheses.
+    Checks if the method definitions have or don't have
+    parentheses.
   Enabled: false
 
 MethodLength:
@@ -211,8 +211,8 @@ ModuleFunction:
 
 NegatedIf:
   Description: >-
-		 Favor unless over if for negative conditions
-		 (or control flow or).
+    Favor unless over if for negative conditions
+    (or control flow or).
   Enabled: false
 
 NegatedWhile:
@@ -237,8 +237,8 @@ Not:
 
 NumericLiterals:
   Description: >-
-		 Add underscores to large numeric literals to improve their
-		 readability.
+    Add underscores to large numeric literals to improve their
+    readability.
   Enabled: false
 
 OpMethod:
@@ -283,10 +283,10 @@ RedundantSelf:
 
 RegexpLiteral:
   Description: >-
-		 Use %r for regular expressions matching more than
-		 `MaxSlashes` '/' characters.
-		 Use %r only for regular expressions matching more than
-		 `MaxSlashes` '/' character.
+    Use %r for regular expressions matching more than
+    `MaxSlashes` '/' characters.
+    Use %r only for regular expressions matching more than
+    `MaxSlashes` '/' character.
   Enabled: false
 
 RescueModifier:
@@ -315,8 +315,8 @@ SingleLineMethods:
 
 SingleSpaceBeforeFirstArg:
   Description: >-
-		 Checks that exactly one space is used between a method name
-		 and the first argument for method calls without parentheses.
+    Checks that exactly one space is used between a method name
+    and the first argument for method calls without parentheses.
   Enabled: false
 
 SpaceAfterControlKeyword:
@@ -329,15 +329,15 @@ SpaceAfterNot:
 
 SpaceBeforeComment:
   Description: >-
-		 Checks for missing space between code and a comment on the
-		 same line.
+    Checks for missing space between code and a comment on the
+    same line.
   Enabled: false
 
 SpaceInsideBlockBraces:
   Description: >-
-		 Checks that block braces have or don't have surrounding space.
-		 For blocks taking parameters, checks that the left brace has
-		 or doesn't have trailing space.
+    Checks that block braces have or don't have surrounding space.
+    For blocks taking parameters, checks that the left brace has
+    or doesn't have trailing space.
   Enabled: false
 
 SpaceBeforeModifierKeyword:
@@ -362,8 +362,8 @@ UnneededPercentX:
 
 VariableInterpolation:
   Description: >-
-		 Don't interpolate global, instance and class variables
-		 directly in strings.
+    Don't interpolate global, instance and class variables
+    directly in strings.
   Enabled: false
 
 WhenThen:
@@ -376,6 +376,6 @@ WhileUntilDo:
 
 WhileUntilModifier:
   Description: >-
-		 Favor modifier while/until usage when you have a
-		 single-line body.
+    Favor modifier while/until usage when you have a
+    single-line body.
   Enabled: false
