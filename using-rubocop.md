@@ -5,7 +5,7 @@ Rubocop is an [open-source gem](https://github.com/bbatsov/rubocop) that perform
 ##Recommended usage
 
 Using Rubocop is not compulsory for GDS Ruby projects. It is however highly recommended to enforce at least consistent use of whitespace and indentation.
-The GDS-styleguide cops are validated by default and present in the gds-ruby-styleguide.yml configuration. Other validators that may be useful to your project can be found in the three "other-***.yml" files. All cops should be enabled and disabled at the discretion of each project's technical lead.
+The GDS-styleguide cops are validated by default and present in the gds-ruby-styleguide.yml configuration. Other validators that may be useful to your project can be found in the three "other-***.yml" files. Choice of cops to use is left to the discretion of your team.
 
 ##How to setup Rubocop
 
