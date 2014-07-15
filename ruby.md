@@ -24,7 +24,7 @@ Some good reasons to ignore a particular guideline:
 4. When the code needs to remain compatible with older versions of Ruby that
    don't support the feature recommended by the style guide.
 
-The rules in this guide are annotated with their corresponding automated validators in Rubocop. Please see [using-rubocop] for more information.
+The rules in this guide are annotated with their corresponding automated validators in Rubocop. Please see [using-rubocop](using-rubocop.md) for more information.
 
 ## General
 
