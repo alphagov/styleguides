@@ -39,8 +39,8 @@ Use soft tabs with a two space indent.
   ```
 
   **Why:** consistent measurements are better at ensuring all elements on the
-  page line up in a visually appealing manor. Pixels are used over `em` or `rem`
-  because they are consistent and predictable. 
+  page line up in a visually appealing manner. Pixels are used over `em` or `rem`
+  because they are consistent and predictable.
 
 * Avoid using rem sizing
 
