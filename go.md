@@ -11,6 +11,7 @@ Use [`gofmt`](http://golang.org/cmd/gofmt/). This [avoids religious wars about w
 * vendoring
 * [gopkg.in](http://labix.org/gopkg.in)
 * git subtree
+* [third_party.go](https://github.com/philips/third_party.go)
 * etc
 
 ## Channels
