@@ -7,7 +7,7 @@
   > The request has been accepted for processing, but the processing has not
   > been completed.
 
-- Use `422` for validation errors, as described in [RFC 2918](http://tools.ietf.org/html/rfc4918). As described in the RFC:
+- Use `422` for validation errors, as described in [RFC 2918](http://tools.ietf.org/html/rfc4918#section-11.2):
 
   > The 422 (Unprocessable Entity) status code means the server understands the
   > content type of the request entity (hence a 415(Unsupported Media Type)
