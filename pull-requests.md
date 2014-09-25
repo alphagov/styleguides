@@ -5,9 +5,9 @@ This is a pull requests style guide for working on GOV.UK.
 ## Why do we do pull requests on GOV.UK?
 
 - It's good practice to have a second opinion
-- It's part of our accreditation - the second pair of eyes provides a
-  lightweight change management process, and shares responsiblity for the code
-  going live
+- It's part of our accreditation - the extra pair of (unconnected - even if you
+  pair you need a third person to merge) eyes provides a lightweight change
+  management process, and shares responsiblity for the code going live
 - It's good to spread knowledge and socialise changes amongst others
 - It's good to notify people (via email, GitHub notifications etc.) who might
   otherwise not be involved (we can even 'mention' specific people with `@name`
