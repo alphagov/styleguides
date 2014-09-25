@@ -85,6 +85,7 @@ individual is happy with the summary first.
 - If you're going to discuss some issues offline, please comment as such in the
   PR so that no-one merges it in the meantime - "A few issues here, going to
   discuss offline" would be enough
+- Try running the code - even if the tests pass it might have bugs
 - Definition of 'done' - if the PR adds value on its own but doesn't entirely
   address the need/ticket merge and deploy it anyway. Any improvement is a good
   improvement, and it keeps the code moving
