@@ -94,7 +94,7 @@ individual is happy with the summary first.
   properly reviewed
 - The same goes for small comments, email typo corrections - state clearly that
   you didn't review the entire thing.
-- Always comment on individual lines the full-file diff view, not on a commit
+- Always comment on individual lines in the full-file diff view, not on a commit
   page because GitHub loses them if you rebase
 - If you're committed to reviewing the request through to merging or closing,
   assign the PR to yourself
@@ -124,7 +124,7 @@ grammatical errors in documentation.
 - Explicitly comment that all relevant comments have been addressed to notify
   any watchers - you don't need to do this on a per-comment basis
 - Refactoring can and should be done in follow-up separate pull request - it
-  should never be considered a blockers
+  should never be considered a blocker
 
 ## 'Done'
 
