@@ -106,6 +106,10 @@ individual is happy with the summary first.
 - Likewise, when commenting on things, state plainly whether the rest of the PR
   is good to merge (to aid future mergers once comment is addressed)
 
+Don't forget that if the code is good, or solves something in a clever way, *say
+so*. Call out individual bits of quality - it signposts good practice for
+others, and rewards the person submitting the request.
+
 ### Addressing comments
 
 Any comments flagged as blocking should be addressed. This includes spelling or
