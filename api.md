@@ -2,7 +2,7 @@
 
 ### RESTful behaviour and HTTP status codes
 
-- Use `202` for times when the data is valid, but we've queued the persistence for background processing, as described in [RFC 2616](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.3):
+- Use `202` for times when the data is valid, but we've queued the persistence for background processing, as described in [RFC 7231](http://tools.ietf.org/html/rfc7231#section-6.3.3):
 
   > The request has been accepted for processing, but the processing has not
   > been completed.
