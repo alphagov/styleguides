@@ -297,6 +297,7 @@ The rules in this guide are annotated with their corresponding automated validat
     (1..10).each do |i|
       # things
     end
+    ```
 
 -   Never chain `do...end`. (*MethodCalledOnDoEndBlock, MultilineBlockChain*)
 
