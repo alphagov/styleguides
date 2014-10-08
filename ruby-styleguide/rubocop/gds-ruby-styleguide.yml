@@ -230,7 +230,7 @@ MethodName:
 TrivialAccessors:
   Description: Prefer attr_* methods to trivial readers/writers.
   Enabled: true
-  ExactNameMatch: false
+  ExactNameMatch: true
   AllowPredicates: false
   AllowDSLWriters: false
   Whitelist:
