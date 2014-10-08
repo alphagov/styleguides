@@ -289,7 +289,7 @@ HashSyntax:
 
 TrailingComma:
   Description: Checks for trailing comma in parameter lists and literals.
-  Enabled: true
+  Enabled: false
   EnforcedStyleForMultiline: comma
   SupportedStyles:
   - comma
