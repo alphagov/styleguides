@@ -105,6 +105,8 @@ individual is happy with the summary first.
   a blocker in a comment
 - Likewise, when commenting on things, state plainly whether the rest of the PR
   is good to merge (to aid future mergers once comment is addressed)
+- Ensure that any relevant documentation (`README` files, things in the `doc`
+  folder) is up to date with the changes
 
 Don't forget that if the code is good, or solves something in a clever way, *say
 so*. Call out individual bits of quality - it signposts good practice for
