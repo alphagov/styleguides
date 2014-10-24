@@ -115,3 +115,34 @@ future when the vendor prefixed versions aren't needed.
   have to scroll around watching nesting levels to try and figure out what the
   `&` references.
 
+* Where possible rather than repeating selectors nest blocks together
+
+  ```sass
+  // Bad
+  .header h1 {
+    font-weight: bold;
+  }
+  .header span {
+    color: lightgray;
+  }
+  .header .date {
+    color: blue;
+  }
+
+  // Good
+  .header {
+    h1 {
+      font-weight: bold;
+    }
+    span {
+      color: lightgray;
+    }
+    .date {
+      color: blue;
+    }
+  }
+  ```
+
+  **Why:** by nesting selectors it is clearer for future developers to work out
+  that rules all effect the same elements. It also stops people accidentally
+  adding unrelated selectors between related rules.
