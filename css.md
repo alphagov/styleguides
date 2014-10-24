@@ -80,38 +80,69 @@ future when the vendor prefixed versions aren't needed.
 
 ## Sass nesting
 
-Always define parent reference selectors before defining child selectors
+* Always define parent reference selectors before defining child selectors
 
-```sass
-// Bad
-a {
-  color: red;
+  ```sass
+  // Bad
+  a {
+    color: red;
 
-  .span {
+    .span {
+      color: blue;
+    }
+
+    &:hover {
+      color: pink;
+    }
+  }
+
+  // Good
+  a {
+    color: red;
+
+    &:hover {
+      color: pink;
+    }
+
+    .span {
+      color: blue;
+    }
+  }
+  ```
+
+  **Why:** by putting parent reference selectors first it keeps the styling for
+  that element together. By putting styling for other elements in the middle you
+  have to scroll around watching nesting levels to try and figure out what the
+  `&` references.
+
+* Where possible rather than repeating selectors nest blocks together
+
+  ```sass
+  // Bad
+  .header h1 {
+    font-weight: bold;
+  }
+  .header span {
+    color: lightgray;
+  }
+  .header .date {
     color: blue;
   }
 
-  &:hover {
-    color: pink;
+  // Good
+  .header {
+    h1 {
+      font-weight: bold;
+    }
+    span {
+      color: lightgray;
+    }
+    .date {
+      color: blue;
+    }
   }
-}
+  ```
 
-// Good
-a {
-  color: red;
-
-  &:hover {
-    color: pink;
-  }
-
-  .span {
-    color: blue;
-  }
-}
-```
-
-**Why:** by putting parent reference selectors first it keeps the styling for
-that element together. By putting styling for other elements in the middle you
-have to scroll around watching nesting levels to try and figure out what the
-`&` references.
-
+  **Why:** by nesting selectors it is clearer for future developers to work out
+  that rules all effect the same elements. It also stops people accidentally
+  adding unrelated selectors between related rules.
