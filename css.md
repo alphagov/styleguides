@@ -82,7 +82,7 @@ future when the vendor prefixed versions aren't needed.
 
 * Always define parent reference selectors before defining child selectors
 
-  ```sass
+  ```scss
   // Bad
   a {
     color: red;
@@ -117,7 +117,7 @@ future when the vendor prefixed versions aren't needed.
 
 * Where possible rather than repeating selectors nest blocks together
 
-  ```sass
+  ```scss
   // Bad
   .header h1 {
     font-weight: bold;
