@@ -144,5 +144,5 @@ future when the vendor prefixed versions aren't needed.
   ```
 
   **Why:** by nesting selectors it is clearer for future developers to work out
-  that rules all effect the same elements. It also stops people accidentally
+  that rules all affect the same elements. It also stops people accidentally
   adding unrelated selectors between related rules.
