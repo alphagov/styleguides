@@ -62,12 +62,12 @@ Keep this section limited to core endpoints - if the app is complex link out to 
 
 ```
 
-## Things this template achieves
+## Benefits of using this template
 
-- Is consistent
-- Is scannable
-- Functionality is shown in screenshots and links to live services
-- Has quick start information for new developers or interested third parties
+- it is consistent
+- it is scannable
+- functionality is shown in screenshots and links to live services
+- it has quick start information for new developers or interested third parties
 
 ## Things we shouldn't put in the README
 
