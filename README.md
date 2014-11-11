@@ -9,6 +9,8 @@ GDS Style guides
 
 ## [Git][git]
 
+## [Go][go]
+
 ## [HTML][html]
 
 ## [Javascript][js]
@@ -30,6 +32,7 @@ We also have [guidelines for packaging gems][gem].
 [css]: css.md
 [gem]: https://github.com/alphagov/wiki/wiki/Gem-guidelines
 [git]: git.md
+[go]: go.md
 [html]: html.md
 [js]: js.md
 [pp]: puppet.md
