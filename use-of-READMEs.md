@@ -28,7 +28,11 @@ One paragraph description and purpose.
 
 ## Technical documentation
 
-Document if app is Ruby etc and whether it uses Bundler etc.
+Write a single paragraph including a general technical overview of the app.
+Example:
+
+This is a Ruby on Rails application that maps RESTful URLs onto a persistence
+layer. It's only presented as an internal API and doesn't face public users.
 
 ### Dependencies
 
