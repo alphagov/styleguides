@@ -3,7 +3,7 @@
 The purpose of this styleguide is to provide some conventions for working on Go code within GDS. There are already good resources on writing Go code, which are worth reading first:
 
 * [Effective Go](https://golang.org/doc/effective_go.html)
-* [Code Review Comments](https://code.google.com/p/go-wiki/wiki/CodeReviewComments) (documenting points that have been raised in Google code reviews).
+* [Code Review Comments](https://code.google.com/p/go-wiki/wiki/CodeReviewComments) (documenting points that have been raised in Google code reviews)
 
 ## Code formatting
 
@@ -22,8 +22,8 @@ If you are writing concurrent code, use the [race detector](https://blog.golang.
 There is no centrally-mandated dependency manager for Go, which means a few techniques have sprung up. These include:
 
 * tools like [godep](https://github.com/tools/godep) and [gom](https://github.com/mattn/gom), which ensure local copies of a dependency are checked out to a specific version
-* "vendoring" (i.e. copying source code in some manner to a location you control)
-* [gopkg.in](http://labix.org/gopkg.in), which provides a method of using versioned import paths.
+* vendoring (ie copying source code in some manner to a location you control)
+* [gopkg.in](http://labix.org/gopkg.in), which provides a method of using versioned import paths
 
 We are currently evaluating `godep` and `gom` as tools for managing dependencies. While godep is probably more widely used,
 gom offers some conveniences for modifying `$GOPATH`, which is useful for isolating jenkins builds. If you are using a different
