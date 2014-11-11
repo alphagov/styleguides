@@ -1,18 +1,41 @@
 # Go styleguide
 
-## Whitespace
+The purpose of this styleguide is to provide some conventions for working on Go code within GDS. There are already good resources on writing Go code, which are worth reading first:
 
-Use [`gofmt`](http://golang.org/cmd/gofmt/). This [avoids religious wars about where curly braces](http://blog.golang.org/go-fmt-your-code) should go.
+* [Effective Go](https://golang.org/doc/effective_go.html)
+* [Code Review Comments](https://code.google.com/p/go-wiki/wiki/CodeReviewComments) (documenting points that have been raised in Google code reviews).
+
+## Code formatting
+
+Use [`gofmt`](http://golang.org/cmd/gofmt/). This means all Go code reads in the same way which is [important when looking at unfamiliar code](http://blog.golang.org/go-fmt-your-code).
+
+You may also want to use [`golint`](https://github.com/golang/lint) which assesses code style.
+
+## Code checking
+
+[`govet`](https://godoc.org/golang.org/x/tools/cmd/vet), which checks correctness, should be used as part of your build process.
+
+If you are writing concurrent code, use the [race detector](https://blog.golang.org/race-detector) to detect race conditions.
 
 ## External dependencies
 
-**TODO** Please fill out (ideally with definitive guidance) discussion of how to manage dependencies, looking at options such as:
+There is no centrally-mandated dependency manager for Go, which means a few techniques have sprung up. These include:
 
-* vendoring
-* [gopkg.in](http://labix.org/gopkg.in)
-* git subtree
-* [third_party.go](https://github.com/philips/third_party.go)
-* etc
+* tools like [godep](https://github.com/tools/godep) and [gom](https://github.com/mattn/gom), which ensure local copies of a dependency are checked out to a specific version.
+* "vendoring" (i.e. copying source code in some manner to a location you control)
+* [gopkg.in](http://labix.org/gopkg.in), which provides a method of using versioned import paths.
+
+We are currently evaluating `godep` and `gom` as tools for managing dependencies. While godep is probably more widely used,
+gom offers some conveniences for modify `$GOPATH`, which is useful for isolating jenkins builds. If you are using a different
+CI process, godep may be sufficient for your needs.
+
+## Web frameworks
+
+While it's difficult to provide any guidance that will be generally applicable, there are couple of useful things to consider when structuring your Go program.
+
+The first is that Go's standard library is modern and powerful. If you just need simple HTTP routing and handling, the [`net/http` package will probably meet your needs`](https://golang.org/doc/articles/wiki/).
+
+The second is that if `net/http` falls short, it's worth choosing something that integrates well with it. The [`gorilla`](http://www.gorillatoolkit.org/) toolkit provides some excellent additions to `net/http`.
 
 ## Channels
 
