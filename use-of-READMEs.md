@@ -5,6 +5,7 @@ This is a guide to writing and maintaining README documents for GOV.UK's public 
 ## Who are READMEs for (aka what's the user need)?
 
 - New starters to GDS
+- People joining a new team
 - People interested in our work
 - Developers on other teams
 
@@ -15,7 +16,7 @@ This is a guide to writing and maintaining README documents for GOV.UK's public 
 
 One paragraph description and purpose.
 
-## Screenshots (if there's a client facing aspect of it)
+## Screenshots (if there's a client-facing aspect of it)
 
 ## Live examples (if available)
 
@@ -50,7 +51,7 @@ Include any other edge cases, e.g parallel test runner in Whitehall
 
 ### Example API output (optional)
 
-`one-line-curl-command with json response after`
+`one-line-curl-command with JSON response after`
 
 Keep this section limited to core endpoints - if the app is complex link out to `/docs`.
 
@@ -86,12 +87,12 @@ Keep this section limited to core endpoints - if the app is complex link out to 
 	- Document any weirdness here (eg when to use Cucumber over something else)
 - Full licence - again, follow [GitHub convention](https://help.github.com/articles/open-source-licensing/#where-does-the-license-live-on-my-repository)
 
-## One line summaries on GitHub repositories
+## One-line summaries on GitHub repositories
 
 Who are these for? These are for people who scan the list in [alphagov](https://github.com/alphagov/) and need a quick overview.
 
 - Include information about whether it's on GOV.UK
-- Try and tone down technical language - 'Filtered search of content' is better than 'Faceted search interface'
+- Try to tone down technical language - 'Filtered search of content' is better than 'Faceted search interface'
 - Don't use the GitHub link field unless it has a single unchanging URL - better to version public links with the code
 
 A good example:
