@@ -33,7 +33,7 @@ Document if app is Ruby etc and whether it uses Bundler etc.
 ### Dependencies
 
 - [alphagov/other-repo]() - provides some downstream service
-- [redis]() - provides a primitive
+- [redis]() - provides a backing service for work queues
 
 ### Running the application
 
