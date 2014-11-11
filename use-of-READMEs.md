@@ -5,6 +5,7 @@ This is a guide to writing and maintaining README documents for GOV.UK's public 
 ## Who are READMEs for (aka what's the user need)?
 
 - New starters to GDS
+- People joining a new team
 - People interested in our work
 - Developers on other teams
 
