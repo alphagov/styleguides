@@ -53,16 +53,17 @@ ticket is publicly viewable (and likely to remain so).
 
 ### Structure
 
-Commit messages should contain a:
+Commit messages should start with a one-line summary no longer than 50
+characters. Various Git tools (including GitHub) use this as the commit
+summary, so you should format it like an email subject, with a leading capital
+and no full stop. The Git convention is to write these in the present tense.
+For example:
 
-* short summary, where you:
-  * use no more than 50 characters
-  * start with a capital letter
-  * write in the present tense
-  * do not add a full stop
-* longer explanation, if needed, and:
-  * leave a blank line before
-  * hard-wrap lines at 72 characters
+> Leverage best-of-breed synergies going forward
+
+You should leave a blank line before the rest of the commit message, which you
+should wrap at around 72 characters: this makes it easier to view commit
+messages in a terminal.
 
 
 #### Example
