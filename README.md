@@ -2,24 +2,27 @@
 
 This is a collection of styleguides for development of apps on GOV.UK.
 
-## [CSS][css]
+## Languages
 
-## [Git][git]
+[CSS][css]
 
-## [Go][go]
+[Go][go]
 
-## [HTML][html]
+[HTML][html]
 
-## [Javascript][js]
+[Javascript][js]
 
-## [Puppet][pp]
+[Ruby][rb]
 
-## [Ruby][rb]
+The [Ruby guide][rb] is based on [GitHub's](https://github.com/styleguide/ruby).
 
-The [Ruby guide][rb] is based on
-[GitHub's](https://github.com/styleguide/ruby).
+## Tools
 
-We also have [guidelines for packaging gems][gem].
+[Git][git]
+
+[Puppet][pp]
+
+[Guidelines for packaging gems][gem]
 
 ## Useful guides elsewhere
 
