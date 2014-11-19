@@ -1,5 +1,6 @@
-GDS Style guides
-================
+# GOV.UK Style guides
+
+This is a collection of styleguides for development of apps on GOV.UK.
 
 ## [Colour palette][colours]
 
