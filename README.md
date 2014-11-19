@@ -14,13 +14,21 @@ This is a collection of styleguides for development of apps on GOV.UK.
 
 [Ruby][rb]
 
-## Tools
+## Tools, processes and other guidelines
 
-[Git][git]
+[APIs][api]
+
+[Git (including commit message guidance)][git]
+
+[Pull request guidance][pr]
 
 [Puppet][pp]
 
 [Guidelines for packaging gems][gem]
+
+[READMEs for GOV.UK applications][readme]
+
+[Rubocop][rubocop]
 
 ## Useful guides elsewhere
 
@@ -32,6 +40,7 @@ This is a collection of styleguides for development of apps on GOV.UK.
 
 [Typographic styles][type] used on GOV.UK
 
+[api]: api.md
 [colours]: http://alphagov.github.com/design/gov.uk.colours
 [css]: css.md
 [gem]: https://github.com/alphagov/wiki/wiki/Gem-guidelines
@@ -40,5 +49,8 @@ This is a collection of styleguides for development of apps on GOV.UK.
 [html]: html.md
 [js]: js.md
 [pp]: puppet.md
+[pr]: pull-requests.md
 [rb]: ruby.md
+[readme]: use-of-READMEs.md
+[rubocop]: using-rubocop.md
 [type]: http://alphagov.github.com/design/gov.uk.typography
