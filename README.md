@@ -14,8 +14,6 @@ This is a collection of styleguides for development of apps on GOV.UK.
 
 [Ruby][rb]
 
-The [Ruby guide][rb] is based on [GitHub's](https://github.com/styleguide/ruby).
-
 ## Tools
 
 [Git][git]
