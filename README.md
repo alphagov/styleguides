@@ -2,10 +2,6 @@
 
 This is a collection of styleguides for development of apps on GOV.UK.
 
-## [Colour palette][colours]
-
-[Hex and RGB values][colours] for all the standard colours used on GOV.UK
-
 ## [CSS][css]
 
 ## [Git][git]
@@ -25,7 +21,13 @@ The [Ruby guide][rb] is based on
 
 We also have [guidelines for packaging gems][gem].
 
-## [Typography][type]
+## Useful guides elsewhere
+
+### [Colour palette][colours]
+
+[Hex and RGB values][colours] for all the standard colours used on GOV.UK
+
+### [Typography][type]
 
 [Typographic styles][type] used on GOV.UK
 
