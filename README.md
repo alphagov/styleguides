@@ -18,13 +18,13 @@ This is a collection of styleguides for development of apps on GOV.UK.
 
 [APIs][api]
 
+[Gem guidelines][gem]
+
 [Git (including commit message guidance)][git]
 
 [Pull request guidance][pr]
 
 [Puppet][pp]
-
-[Guidelines for packaging gems][gem]
 
 [READMEs for GOV.UK applications][readme]
 
@@ -32,11 +32,7 @@ This is a collection of styleguides for development of apps on GOV.UK.
 
 ## Useful guides elsewhere
 
-### [Colour palette][colours]
-
 [Hex and RGB values][colours] for all the standard colours used on GOV.UK
-
-### [Typography][type]
 
 [Typographic styles][type] used on GOV.UK
 
