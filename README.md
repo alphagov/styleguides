@@ -32,16 +32,14 @@ This is a collection of styleguides for development of apps on GOV.UK.
 
 ## Useful guides elsewhere
 
-[Hex and RGB values][colours] for all the standard colours used on GOV.UK
-
-[Typographic styles][type] used on GOV.UK
+[govuk-elements][govuk-elements] – layout, typography, colour, images, icons, forms, buttons and data used on GOV.UK.
 
 [api]: api.md
-[colours]: http://alphagov.github.com/design/gov.uk.colours
 [css]: css.md
 [gem]: https://github.com/alphagov/wiki/wiki/Gem-guidelines
 [git]: git.md
 [go]: go.md
+[govuk-elements]: http://govuk-elements.herokuapp.com/
 [html]: html.md
 [js]: js.md
 [pp]: puppet.md
@@ -49,4 +47,3 @@ This is a collection of styleguides for development of apps on GOV.UK.
 [rb]: ruby.md
 [readme]: use-of-READMEs.md
 [rubocop]: using-rubocop.md
-[type]: http://alphagov.github.com/design/gov.uk.typography
