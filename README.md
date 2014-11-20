@@ -1,40 +1,49 @@
-GDS Style guides
-================
+# GOV.UK Style guides
 
-## [Colour palette][colours]
+This is a collection of styleguides for development of apps on GOV.UK.
 
-[Hex and RGB values][colours] for all the standard colours used on GOV.UK
+## Languages
 
-## [CSS][css]
+[CSS][css]
 
-## [Git][git]
+[Go][go]
 
-## [Go][go]
+[HTML][html]
 
-## [HTML][html]
+[Javascript][js]
 
-## [Javascript][js]
+[Ruby][rb]
 
-## [Puppet][pp]
+## Tools, processes and other guidelines
 
-## [Ruby][rb]
+[APIs][api]
 
-The [Ruby guide][rb] is based on
-[GitHub's](https://github.com/styleguide/ruby).
+[Gem guidelines][gem]
 
-We also have [guidelines for packaging gems][gem].
+[Git (including commit message guidance)][git]
 
-## [Typography][type]
+[Pull request guidance][pr]
 
-[Typographic styles][type] used on GOV.UK
+[Puppet][pp]
 
-[colours]: http://alphagov.github.com/design/gov.uk.colours
+[READMEs for GOV.UK applications][readme]
+
+[Rubocop][rubocop]
+
+## Useful guides elsewhere
+
+[govuk-elements][govuk-elements] – layout, typography, colour, images, icons, forms, buttons and data used on GOV.UK.
+
+[api]: api.md
 [css]: css.md
 [gem]: https://github.com/alphagov/wiki/wiki/Gem-guidelines
 [git]: git.md
 [go]: go.md
+[govuk-elements]: http://govuk-elements.herokuapp.com/
 [html]: html.md
 [js]: js.md
 [pp]: puppet.md
+[pr]: pull-requests.md
 [rb]: ruby.md
-[type]: http://alphagov.github.com/design/gov.uk.typography
+[readme]: use-of-READMEs.md
+[rubocop]: using-rubocop.md
