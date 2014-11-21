@@ -61,7 +61,7 @@ Keep this section limited to core endpoints - if the app is complex link out to 
 
 ## Licence
 
-[MIT Licence](LICENCE)
+[MIT License](LICENCE)
 
 ## Versioning policy (for Gems only)
 
