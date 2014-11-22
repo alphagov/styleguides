@@ -18,6 +18,8 @@ This is a collection of styleguides for development of apps on GOV.UK.
 
 [APIs][api]
 
+[Basic security guidance][security]
+
 [Gem guidelines][gem]
 
 [Git (including commit message guidance)][git]
@@ -47,3 +49,4 @@ This is a collection of styleguides for development of apps on GOV.UK.
 [rb]: ruby.md
 [readme]: use-of-READMEs.md
 [rubocop]: using-rubocop.md
+[security]: basic-security.md
