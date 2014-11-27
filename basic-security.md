@@ -11,5 +11,9 @@ For a good quick overview, see [the OWASP Top 10 list](https://www.owasp.org/ind
 - Don't call `to_sym` on strings - this can lead to memory exhaustion
 - Turn off YAML and XML request deserialisation - this is a major source of attacks and bugs. [Here is an example of one such attack](http://blog.codeclimate.com/blog/2013/01/10/rails-remote-code-execution-vulnerability-explained/).
 - Use ActiveRecord’s built-in methods and [SQL parameter sanitisation](http://guides.rubyonrails.org/security.html#sql-injection-countermeasures) to avoid SQL injection
+- It is worth including [Brakeman](http://brakemanscanner.org/) in the
+  project's CI build. (An example for those who have access is the
+  [Signon build](https://ci-new.alphagov.co.uk/view/Signon/job/govuk_signonotron2/configure).) Be aware though that this does not substitue
+  for awareness of security issues as it will not pick up everything.
 
 It is worth familiarising yourself with the [Ruby on Rails Security Guide](http://guides.rubyonrails.org/security.html).
