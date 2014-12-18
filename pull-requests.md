@@ -136,3 +136,30 @@ grammatical errors in documentation.
 considered delivered until they're in production, and it's the responsibility of
 the programmer who wrote the code to ensure their work is deployed in a timely
 fashion.
+
+### Reviewing external pull requests
+
+We sometimes receive pull requests from members of the public, and while we should be polite to our colleagues of course, it’s even more important that we follow a few guidelines when dealing with people we don’t know, some of whom will be doing this work in their own time.
+
+#### Tone
+
+- Be positive – thank them for contributing. Make this the first thing you say. Thank them even if you are going to immediately reject it
+- When reviewing, make sure you make positive comments as well as suggestions for improvement – a list of just things to fix could be dispiriting
+- Make requests for improvement rather than telling them what to do (“We think it might be better the other way round, what do you think?” rather than “Swap the order of the logic”)
+- Avoid using terms that could be seen as referring to personal traits. (“dumb”, “stupid”) Assume everyone is attractive, intelligent, and well-meaning. Assume good faith
+- Be explicit. Remember people don’t always understand your intentions online
+
+#### Handling the PR
+
+- Communicate clearly about whether we’re interested in the feature or not. If it doesn’t fit with our rationale for the codebase or we don’t want to merge it for another reason, thank them and close
+- If it fits but isn’t mergable due to quality or style issues, then clearly state that we are interested in the feature, but there are barriers to the contribution being merged in its current form
+- It’s worth saying what improvements we’d like to see, but not putting the onus on the contributor to make them all. For example, we might add tests ourselves or work with them to add tests
+- It’s okay to close PRs due to lack of activity; but in this case, invite people to reopen if they pick things up again
+
+#### Practical
+
+- For [vCloud Tools](http://gds-operations.github.io/vcloud-tools/) PRs, make sure someone has acknowledged the PR within two working days, even if this is just a “Thank you, we will review this soon”
+- DO NOT comment on PRs, even to acknowledge them, at the weekend - we do not want to set an expectation that this project is supported outside working hours
+- Try and comment on the changed files rather than by commit as the notifications are easier to follow
+- If the contributor has not written a line in the CHANGELOG, then once their PR is merged, write a line to describe it.
+- Whether they have written the CHANGELOG entry or you do, please add a “Thank you @githubusername”. We don’t usually add CHANGELOG notes for documentation, but if that comes from an external source, add a documentation credit at the end to thank them.
