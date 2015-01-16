@@ -38,7 +38,7 @@ This is a collection of styleguides for development of apps on GOV.UK.
 
 [api]: api.md
 [css]: css.md
-[gem]: https://github.com/alphagov/wiki/wiki/Gem-guidelines
+[gem]: rubygems.md
 [git]: git.md
 [go]: go.md
 [govuk-elements]: http://govuk-elements.herokuapp.com/
