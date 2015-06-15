@@ -173,10 +173,10 @@ function myModule($element){
 function MyModule($element){
   $element.click($.bind(this.submitThing, this));
 }
-MyModuleThing.prototype.showThing = function(){ .. }
-MyModuleThing.prototype.hideThing = function(){ .. }
-MyModuleThing.prototype.submitThing = function(){ .. }
-MyModuleThing.prototype.getArgumentsForThing = function(){ .. }
+MyModule.prototype.showThing = function(){ .. }
+MyModule.prototype.hideThing = function(){ .. }
+MyModule.prototype.submitThing = function(){ .. }
+MyModule.prototype.getArgumentsForThing = function(){ .. }
 
 // Good
 GOVUK.myModule = {
