@@ -30,7 +30,7 @@ This styleguide is based on [GitHub's](https://github.com/styleguide/ruby).
 
 ## General
 
--   Write for Ruby 1.9.
+-   Write for Ruby 2.
 
 -   Use soft-tabs with a two-space indent. (*Tab,IndentationWidth,IndentationConsistency,BlockAlignment,ElseLayout,EndAlignment*)
 
