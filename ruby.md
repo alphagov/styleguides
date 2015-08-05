@@ -368,8 +368,8 @@ This styleguide is based on [GitHub's](https://github.com/styleguide/ruby).
     While several Ruby books suggest the first style, the second is much
     more prominent in practice (and arguably a bit more readable).
 
--   Using the return value of `=` (an assignment) is ok, but surround
-    the assignment with parenthesis.
+-   Using the return value of `=` (an assignment) is OK, but surround
+    the assignment with parentheses.
 
     ```ruby
     # good - shows intented use of assignment
