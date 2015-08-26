@@ -34,8 +34,6 @@ This styleguide is based on [GitHub's](https://github.com/styleguide/ruby).
 
 -   Use soft-tabs with a two-space indent. (*Tab,IndentationWidth,IndentationConsistency,BlockAlignment,ElseLayout,EndAlignment*)
 
--   Keep lines fewer than 80 characters. (*LineLength*)
-
 -   Never leave trailing whitespace, except: (*TrailingWhitespace,EmptyLines,EndOfLine*)
 
 -   Always leave a trailing newline in the file to keep compatibility with
