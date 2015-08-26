@@ -34,7 +34,7 @@ This styleguide is based on [GitHub's](https://github.com/styleguide/ruby).
 
 -   Use soft-tabs with a two-space indent. (*Tab,IndentationWidth,IndentationConsistency,BlockAlignment,ElseLayout,EndAlignment*)
 
--   Keep lines fewer than 80 characters. (*LineLength*)
+-   Keep lines fewer than 80 characters unless doing so makes the code more difficult to read (see [PR 7 in govuk-lint](https://github.com/alphagov/govuk-lint/pull/7) for more information). (*LineLength*)
 
 -   Never leave trailing whitespace, except: (*TrailingWhitespace,EmptyLines,EndOfLine*)
 
