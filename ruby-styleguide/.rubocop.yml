@@ -1,5 +1,0 @@
-inherit_from:
-  - rubocop/gds-ruby-styleguide.yml
-  - rubocop/other-lint.yml
-  - rubocop/other-rails.yml
-  - rubocop/other-style.yml
