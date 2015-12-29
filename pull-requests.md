@@ -52,14 +52,9 @@ styleguide](/git.md#commit-messages).
 
 - It is important to take time to review a pull request properly; the review
   stage is as important as writing the code in the first place
-
-If you're not sure how the individual wants their request reviewed, make an
-effort to contact them before starting - they may prefer some of the feedback to
-be done in person or while pairing (especially if they're less experienced). If
-some of the feedback is performed offline you should capture a summary of the
-output in a pull request comment so others can see it, but make sure the
-individual is happy with the summary first.
-
+- If you're not sure how the individual wants their request reviewed, ask them
+  before starting - they may prefer some of the feedback to be done in person
+  or while pairing (especially if they're less experienced).
 - If you're going to discuss some issues offline, please comment as such in the
   PR so that no-one merges it in the meantime - "A few issues here, going to
   discuss offline" would be enough
