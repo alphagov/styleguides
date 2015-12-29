@@ -50,32 +50,41 @@ styleguide](/git.md#commit-messages).
 
 ### Reviewing a request
 
+#### Guidelines for review
+
 - It is important to take time to review a pull request properly; the review
   stage is as important as writing the code in the first place
 - If you're not sure how the individual wants their request reviewed, ask them
   before starting - they may prefer some of the feedback to be done in person
   or while pairing (especially if they're less experienced).
+- If the code is good, or solves something in a clever way, *say
+  so*. Call out individual bits of quality - it signposts good practice for
+  others, and rewards the person submitting the request.
+- State what, if anything, is a blocker explicitly
+
+#### Communicate with others who may consider reviewing the PR
+
 - If you're going to discuss some issues offline, please comment as such in the
   PR so that no-one merges it in the meantime - "A few issues here, going to
   discuss offline" would be enough. When conversation has taken place elsewhere,
   summarise the conversation as a comment on the PR for the benefit of others.
-- If the code is good, or solves something in a clever way, *say
-  so*. Call out individual bits of quality - it signposts good practice for
-  others, and rewards the person submitting the request.
+- If you look at a PR but don't feel comfortable merging it please say what
+  you've looked at or not so other reviewers know the request hasn't been
+  properly reviewed.
+- If you're committed to reviewing the request through to merging or closing,
+  assign the PR to yourself
+
+
+#### Helpful things to consider while reviewing
+
 - Try running the code - even if the tests pass it might have bugs
 - Consider security when reviewing code, particularly where there is user input.
   The [basic security guidance](basic-security.md) might help.
 - Remember that a PR does not have to entirely solve the problem. If it adds
   value on its own it is better to merge now rather than wait for the rest of
   the changes required.
-- If you look at a PR but don't feel comfortable merging it please say what
-  you've looked at or not so other reviewers know the request hasn't been
-  properly reviewed.
 - Always comment on individual lines in the full-file diff view, not on a commit
   page because GitHub loses them if you rebase
-- If you're committed to reviewing the request through to merging or closing,
-  assign the PR to yourself
-- State what, if anything, is a blocker explicitly
 - Ensure that any relevant documentation (`README` files, things in the `doc`
   folder) is up to date with the changes
 
