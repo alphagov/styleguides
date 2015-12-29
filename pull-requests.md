@@ -50,8 +50,8 @@ styleguide](/git.md#commit-messages).
 
 ### Reviewing a request
 
-Reviewing a request is just as important as writing the code in the first
-place - we need to create space and time to do this.
+- It is important to take time to review a pull request properly; the review
+  stage is as important as writing the code in the first place
 
 If you're not sure how the individual wants their request reviewed, make an
 effort to contact them before starting - they may prefer some of the feedback to
