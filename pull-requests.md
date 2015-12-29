@@ -2,7 +2,7 @@
 
 This is a pull requests style guide for working on GOV.UK.
 
-## Why do we do pull requests on GOV.UK?
+## Why we do pull requests on GOV.UK
 
 - It's good practice to have a second opinion
 - It's part of our accreditation - the extra pair of (unconnected - even if you
@@ -13,15 +13,13 @@ This is a pull requests style guide for working on GOV.UK.
   otherwise not be involved (we can even 'mention' specific people with `@name`
   syntax)
 
-## What shouldn't we do?
+## Cautionary notes
 
-- Use PRs for architectural review - this should be done before the PR with a
-  different audience
-- Consider our work to be 'done' when opening a PR - code is done when it's in
-  production
-- Rely on someone else to spot and merge your PR - it's your job to find a
+- Don't use PRs for architectural review - this should be done before the pull
+  request is raised
+- Don't rely on someone else to spot and merge your PR - it's your job to find a
   reviewer and get the code merged
-- Consider PRs to be all of the work - it's okay to have follow-up PRs for a
+- A PR doesn't have to be all of the work - it's okay to have follow-up PRs for a
   feature if a set of changes are complete enough to go live
 
 ## Guidance for each step
