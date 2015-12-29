@@ -67,8 +67,6 @@ styleguide](/git.md#commit-messages).
 - If you look at a PR but don't feel comfortable merging it please say what
   you've looked at or not so other reviewers know the request hasn't been
   properly reviewed
-- The same goes for small comments, email typo corrections - state clearly that
-  you didn't review the entire thing.
 - Always comment on individual lines in the full-file diff view, not on a commit
   page because GitHub loses them if you rebase
 - If you're committed to reviewing the request through to merging or closing,
