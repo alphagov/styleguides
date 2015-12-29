@@ -61,9 +61,9 @@ styleguide](/git.md#commit-messages).
 - Try running the code - even if the tests pass it might have bugs
 - Consider security when reviewing code, particularly where there is user input.
   The [basic security guidance](basic-security.md) might help.
-- Definition of 'done' - if the PR adds value on its own but doesn't entirely
-  address the need/ticket merge and deploy it anyway. Any improvement is a good
-  improvement, and it keeps the code moving
+- Remember that a PR does not have to entirely solve the problem. If it adds
+  value on its own it is better to merge now rather than wait for the rest of
+  the changes required.
 - If you look at a PR but don't feel comfortable merging it please say what
   you've looked at or not so other reviewers know the request hasn't been
   properly reviewed
