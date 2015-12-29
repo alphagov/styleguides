@@ -30,37 +30,23 @@ If you are not sure how to do any of this, please feel free to ask for help.
 
 ### Opening a request
 
-The canonical description of changes should always be in the individual
+- Before opening the PR, make sure you're up to date with `master` so that your
+  changes are easier to merge
+- The title and description should help the reviewer. Make the title succinct
+  and descriptive, and then add detail in the description.
+- The description should summarise your changes and include useful links, eg to
+  a Pivotal ticket, ZenDesk ticket or related PR. If the changes involve
+  frontend code, we love screenshots!
+- When raising a PR, the title and description are emailed to those following
+  the repo. Any subsequent changes are not emailed, so it's worth spending a
+  bit of time getting it right at the point of raising the PR.
+- It is worth explaining/highlighting any potentially contentious changes, and
+  any testing that you have already done.
+
+Note: The canonical description of changes should always be in the individual
 commits - Pull Requests are an artefact of GitHub, and we would lose that data
 if we switched away. Please refer to the [commit message
 styleguide](/git.md#commit-messages).
-
-That said, the PR description is there to aid the reviewer and to help get your
-code merged - here are some guidelines to help with that process:
-
-- Before opening the PR, make sure you're up to date with `master` so that your
-  changes are easier to merge
-- Make the title of the PR scannable - this will ensure that it's easier for
-  potential reviewers to notice
-- Summarise your changes in the description - this aids both the reviewer and
-  any recipients of the PR via email
-- Title and description changes aren't sent out on notification emails etc., so
-  please ensure you've got a reasonable title and description *before* opening
-  the PR
-- Include information about the problem/user need/tracker ticket you're fixing
-  to help summarise the issue
-- If the changes involve frontend code, we love screenshots!
-- If your changes contain some potentially contentious changes, pre-empt these
-  by explaining why you went one way over another (for the benefit of the
-  reviewer and any watchers)
-- If the changes are difficult or hard to test, please include a summary of your
-  testing methodology and confidence level in the request - this will aid
-  reviewers and prevent them from doing the same work over (this particularly
-  applies to Infrastructure changes, but equally to database optimisations,
-  multi-app API changes etc.)
-- If there are several PRs that you would like to be reviewed and merged together
-  (eg frontend and backend changes, or endpoint and adapter changes), cross-link
-  the PRs by referencing the other PR in a comment or the PR description
 
 ### Reviewing a request
 
