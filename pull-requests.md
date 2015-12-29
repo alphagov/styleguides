@@ -61,8 +61,6 @@ code merged - here are some guidelines to help with that process:
 - If there are several PRs that you would like to be reviewed and merged together
   (eg frontend and backend changes, or endpoint and adapter changes), cross-link
   the PRs by referencing the other PR in a comment or the PR description
-- Use separate commits for formatting, refactoring, etc - change the
-  functionality, commit, then refactor
 
 ### Reviewing a request
 
