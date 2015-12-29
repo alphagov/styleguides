@@ -70,15 +70,12 @@ styleguide](/git.md#commit-messages).
   the changes required.
 - If you look at a PR but don't feel comfortable merging it please say what
   you've looked at or not so other reviewers know the request hasn't been
-  properly reviewed
+  properly reviewed.
 - Always comment on individual lines in the full-file diff view, not on a commit
   page because GitHub loses them if you rebase
 - If you're committed to reviewing the request through to merging or closing,
   assign the PR to yourself
-- If something is a blocker to merging, make that explicit by stating that it's
-  a blocker in a comment
-- Likewise, when commenting on things, state plainly whether the rest of the PR
-  is good to merge (to aid future mergers once comment is addressed)
+- State what, if anything, is a blocker explicitly
 - Ensure that any relevant documentation (`README` files, things in the `doc`
   folder) is up to date with the changes
 
