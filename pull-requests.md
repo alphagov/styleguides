@@ -39,8 +39,7 @@ That said, the PR description is there to aid the reviewer and to help get your
 code merged - here are some guidelines to help with that process:
 
 - Before opening the PR, make sure you're up to date with `master` so that your
-  changes are easier to merge (please ask for help if you're not sure how to do
-  this)
+  changes are easier to merge
 - Make the title of the PR scannable - this will ensure that it's easier for
   potential reviewers to notice
 - Summarise your changes in the description - this aids both the reviewer and
