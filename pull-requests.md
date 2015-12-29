@@ -57,7 +57,8 @@ styleguide](/git.md#commit-messages).
   or while pairing (especially if they're less experienced).
 - If you're going to discuss some issues offline, please comment as such in the
   PR so that no-one merges it in the meantime - "A few issues here, going to
-  discuss offline" would be enough
+  discuss offline" would be enough. When conversation has taken place elsewhere,
+  summarise the conversation as a comment on the PR for the benefit of others.
 - If the code is good, or solves something in a clever way, *say
   so*. Call out individual bits of quality - it signposts good practice for
   others, and rewards the person submitting the request.
@@ -74,9 +75,6 @@ styleguide](/git.md#commit-messages).
   page because GitHub loses them if you rebase
 - If you're committed to reviewing the request through to merging or closing,
   assign the PR to yourself
-- If a conversation about a specific implementation happens off GitHub (eg in
-  Slack or in person), summarise the conversation as a comment on the PR for the
-  benefit of others
 - If something is a blocker to merging, make that explicit by stating that it's
   a blocker in a comment
 - Likewise, when commenting on things, state plainly whether the rest of the PR
