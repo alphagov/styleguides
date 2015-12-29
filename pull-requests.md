@@ -58,6 +58,9 @@ styleguide](/git.md#commit-messages).
 - If you're going to discuss some issues offline, please comment as such in the
   PR so that no-one merges it in the meantime - "A few issues here, going to
   discuss offline" would be enough
+- If the code is good, or solves something in a clever way, *say
+  so*. Call out individual bits of quality - it signposts good practice for
+  others, and rewards the person submitting the request.
 - Try running the code - even if the tests pass it might have bugs
 - Consider security when reviewing code, particularly where there is user input.
   The [basic security guidance](basic-security.md) might help.
@@ -81,9 +84,6 @@ styleguide](/git.md#commit-messages).
 - Ensure that any relevant documentation (`README` files, things in the `doc`
   folder) is up to date with the changes
 
-Don't forget that if the code is good, or solves something in a clever way, *say
-so*. Call out individual bits of quality - it signposts good practice for
-others, and rewards the person submitting the request.
 
 ### Addressing comments
 
