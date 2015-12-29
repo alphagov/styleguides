@@ -49,8 +49,6 @@ code merged - here are some guidelines to help with that process:
   the PR
 - Include information about the problem/user need/tracker ticket you're fixing
   to help summarise the issue
-- Suggest a way to review the request (commit by commit, whole diff, with
-  whitespace turned off etc.)
 - If the changes involve frontend code, we love screenshots!
 - If your changes contain some potentially contentious changes, pre-empt these
   by explaining why you went one way over another (for the benefit of the
