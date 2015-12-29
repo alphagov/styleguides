@@ -32,8 +32,8 @@ Following is a rough workflow with guidance for each step.
 
 The canonical description of changes should always be in the individual
 commits - Pull Requests are an artefact of GitHub, and we would lose that data
-if we switched away. So a good PR description is not an adequate substitute for
-the context and explanation provided by a good series of commits.
+if we switched away. Please refer to the [commit message
+styleguide](/git.md#commit-messages).
 
 That said, the PR description is there to aid the reviewer and to help get your
 code merged - here are some guidelines to help with that process:
