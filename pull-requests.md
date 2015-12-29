@@ -58,9 +58,6 @@ code merged - here are some guidelines to help with that process:
   reviewers and prevent them from doing the same work over (this particularly
   applies to Infrastructure changes, but equally to database optimisations,
   multi-app API changes etc.)
-- If you're changing documentation, always use a spell checker before pushing.
-  We don't always expect comments in code to be free of errors, but we hold
-  documentation to the same standard as anything else we publish
 - If there are several PRs that you would like to be reviewed and merged together
   (eg frontend and backend changes, or endpoint and adapter changes), cross-link
   the PRs by referencing the other PR in a comment or the PR description
