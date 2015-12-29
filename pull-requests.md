@@ -24,9 +24,9 @@ This is a pull requests style guide for working on GOV.UK.
 - Consider PRs to be all of the work - it's okay to have follow-up PRs for a
   feature if a set of changes are complete enough to go live
 
-## What should we do?
+## Guidance for each step
 
-Following is a rough workflow with guidance for each step.
+If you are not sure how to do any of this, please feel free to ask for help.
 
 ### Opening a request
 
