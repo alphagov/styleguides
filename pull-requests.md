@@ -136,3 +136,8 @@ We sometimes receive pull requests from members of the public, and while we shou
 - Try and comment on the changed files rather than by commit as the notifications are easier to follow
 - If the contributor has not written a line in the CHANGELOG, then once their PR is merged, write a line to describe it.
 - Whether they have written the CHANGELOG entry or you do, please add a “Thank you @githubusername”. We don’t usually add CHANGELOG notes for documentation, but if that comes from an external source, add a documentation credit at the end to thank them.
+
+## Further reading
+
+- [Anna Shipman](https://github.com/annashipman) has written a useful blog post about [how to raise a good pull request](http://www.annashipman.co.uk/jfdi/good-pull-requests.html)
+- A great example of [a good pull request](https://github.com/alphagov/frontend/pull/784) raised by [Alice Bartlett](https://github.com/alicebartlett)
