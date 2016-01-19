@@ -8,13 +8,13 @@
   `<p>` cause unnecessary parsing overhead and can cause issues in
   accessibility
 
-## Use ARIA roles appropriately
+## Use [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) roles appropriately
 
-### Guidance on using ARIA landmarks
+### Guidance on using [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) landmarks
 
 When you use HTML5 sectioning elements it's a good idea to include
-the appropriate ARIA landmark roles as well. The trick when you're
-using both HTML5 and ARIA is to put the landmark on the sectioning
+the appropriate [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) landmark roles as well. The trick when you're
+using both HTML5 and [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) is to put the landmark on the sectioning
 element itself because this avoids the information being duplicated by
 screen readers that support both technologies.
 
