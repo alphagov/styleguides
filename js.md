@@ -106,7 +106,7 @@ You should add the `"use strict";` statement to the top of your module functions
 
 **Why:** This enables [strict
 mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode).
-Strict mode converts many mistakes, such as undefined varaibles, into errors
+Strict mode converts many mistakes, such as undefined variables, into errors
 which makes it easier to determine why things aren't working. It also forces
 scope so you don't accidently export globals.
 
