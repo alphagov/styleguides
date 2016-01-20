@@ -547,10 +547,11 @@ This styleguide is based on [GitHub's](https://github.com/styleguide/ruby).
 
 -   Indent `public`, `protected`, and `private` methods to the same level as
     the rest of the methods. Outdent `private` etc. to the same level as
-    `class`, and leave one blank line before, none after. Outdenting these from
-    the method definitions helps them to stand out (syntax highlighting seems
-    to be unreliable in this case). Keeping private methods at the same depth
-    as other methods avoids complicating diffs.
+    `class`, and leave one blank line before  the visibility modifier and one
+    blank line below in order to emphasize that it applies to all methods below
+    it. Outdenting these from the method definitions helps them to stand out (
+    syntax highlighting seems to be unreliable in this case). Keeping private
+    methods at the same depth as other methods avoids complicating diffs.
 
     ```ruby
     class SomeClass
