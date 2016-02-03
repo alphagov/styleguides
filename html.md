@@ -29,6 +29,8 @@ The following roles map directly to HTML5 sectioning elements:
 * `role="contentinfo"` maps to the `<footer>` element
 * `role="navigation"` maps to the `<nav>` element
 
+[This article from Léonie Watson](http://tink.uk/screen-readers-aria-roles-html5-support/) explains why using ARIA landmark roles in this way delivers the best experience for screen reader users.
+
 For a more comprehensive guide to the mapping of roles to HTML5 sectioning elements read this [guide](http://blog.paciellogroup.com/2013/02/using-wai-aria-landmarks-2013/) from the Paciello Group.
 
 The following landmark roles don't map to HTML5 elements, but are
@@ -53,6 +55,8 @@ Example:
       <h1 id="advice">Help and advice</h1>
 
 ## Navigational elements
+
+When using the `<nav>` tag, add the ARIA landmark `role="navigation"`.
 
 The detail of using the `<nav>` tag is covered in this [blog post](https://insidegovuk.blog.gov.uk/2013/07/03/rethinking-navigation/).
 
