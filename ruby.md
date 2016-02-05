@@ -103,6 +103,28 @@ This styleguide is based on [GitHub's](https://github.com/styleguide/ruby).
     end
     ```
 
+-   When long lists of method arguments require breaking over multiple lines,
+    break each successive argument on a new line, including the first argument
+    and closing paren. The final argument should include a trailing comma.
+
+    ```ruby
+    # bad
+    some_method('first', 'second',
+                'another',
+                { something: 'nothing' })
+
+    # good
+    some_method(
+      'first',
+      'second',
+      'another',
+      { something: 'nothing' },
+    )
+
+    # good, doesn't need to span multiple lines
+    some_method('first', 'second')
+    ```
+
 ## Gemfile
 
 -   Where a gem is trusted to follow [semantic versioning](http://semver.org/),
