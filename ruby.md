@@ -253,18 +253,6 @@ This styleguide is based on [GitHub's](https://github.com/styleguide/ruby).
 -   Avoid multi-line `?:` (the ternary operator), use `if/unless`
     instead.(*MultilineTernaryOperator*)
 
--   Favor modifier `if/unless` usage when you have a single-line body. (*IfUnlessModifier*)
-
-    ```ruby
-    # bad
-    if some_condition
-      do_something
-    end
-
-    # good
-    do_something if some_condition
-    ```
-
 -   Never use `unless` with `else`. Rewrite these with the positive case
     first. (*UnlessElse*)
 
