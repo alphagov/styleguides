@@ -62,7 +62,7 @@ Use soft tabs with a two space indent.
 
 ## Bleeding edge features
 
-When using bleeding edge featues which require vendor prefixes use the [mixins
+When using bleeding edge features which require vendor prefixes use the [mixins
 in the frontend_toolkit][css3.scss].
 
 [css3.scss]: https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_css3.scss
@@ -74,7 +74,7 @@ in the frontend_toolkit][css3.scss].
 ```
 
 **Why:** By keeping vendor prefixes in one place we can easily add or update
-the vendor prifixed properties in one place. We can also then remove them and
+the vendor prefixed properties in one place. We can also then remove them and
 add warnings to let future developers know they can remove the prefixes in the
 future when the vendor prefixed versions aren't needed.
 
