@@ -9,13 +9,13 @@ important. Consistency within a project is more important. Consistency within
 one module or function is most important.
 
 But most importantly: know when to be inconsistent -- sometimes the style guide
-just doesn't apply. When in doubt, use your best judgment. Look at other
+just doesn't apply. When in doubt, use your best judgement. Look at other
 examples and decide what looks best. And don't hesitate to ask!
 
 Some good reasons to ignore a particular guideline:
 
 1. When applying the guideline would make the code less readable, even for
-   someone who is used to reading code that follows this styleguide.
+   someone who is used to reading code that follows this style guide.
 2. To be consistent with surrounding code that also breaks it (maybe for
    historic reasons) -- although this is also an opportunity to clean up the
    existing code.
@@ -484,7 +484,7 @@ This styleguide is based on [GitHub's](https://github.com/styleguide/ruby).
 ## Classes
 
 -   Avoid the usage of class (`@@`) variables due to their "nasty"
-    behavior in inheritance. (*ClassVars*)
+    behaviour in inheritance. (*ClassVars*)
 
     ```ruby
     class Parent
