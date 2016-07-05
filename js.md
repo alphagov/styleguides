@@ -136,15 +136,20 @@ Modules should be wrapped in a closure and attach themselves to the global
 `GOVUK` object.
 
 ```
-(function() {
+(function(global) {
   "use strict";
-  window.GOVUK = window.GOVUK || {};
-  var $ = window.jQuery;
+
+  var $ = global.jQuery;
+  var GOVUK = global.GOVUK || {};
 
   ...
 
   GOVUK.myModule = ...
-}());
+
+  ...
+
+  global.GOVUK = GOVUK;
+})(window);
 ```
 
 **Why:** attaching to the `GOVUK` object keeps us from polluting the global
