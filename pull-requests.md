@@ -141,3 +141,4 @@ We sometimes receive pull requests from members of the public, and while we shou
 
 - [Anna Shipman](https://github.com/annashipman) has written a useful blog post about [how to raise a good pull request](http://www.annashipman.co.uk/jfdi/good-pull-requests.html)
 - A great example of [a good pull request](https://github.com/alphagov/frontend/pull/784) raised by [Alice Bartlett](https://github.com/alicebartlett)
+- A very useful post about [using automatic style enforcement to make pull request review more effective](https://gdstechnology.blog.gov.uk/2016/09/30/easing-the-process-of-pull-request-reviews/) by [Paul Bowsher](https://twitter.com/boffbowsh)
