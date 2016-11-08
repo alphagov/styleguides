@@ -100,7 +100,8 @@ You are encouraged to make liberal use of Git's [history rewriting
 features](http://git-scm.com/book/en/Git-Tools-Rewriting-History) while working
 locally, in order to arrange your commits into appropriate logical chunks that
 will make sense to your fellow developers. In particular, you may find
-`git rebase --interactive` very useful. However, you should not rewrite commits
+`git rebase --interactive` very useful. You are also encouraged to avoid merge
+commits and use git rebase master instead. However, you should not rewrite commits
 that have been pushed unless you:
 
   * are **very sure** that no-one else will be affected by you rewriting the
