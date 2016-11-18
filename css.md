@@ -1,4 +1,4 @@
-## CSS Coding Style
+# CSS Coding Style
 
 ## Contents
 

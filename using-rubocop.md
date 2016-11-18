@@ -1,3 +1,5 @@
+# Using Rubocop
+
 ##What is Rubocop
 
 Rubocop is an [open-source gem](https://github.com/bbatsov/rubocop) that performs static analysis of Ruby code according to rules that can be granularly configured. Each validation, or rule, is called a "cop". Some of those cops come with the ability to auto-correct issues.

@@ -1,3 +1,5 @@
+# Rubygems
+
 ## Naming
 
 In general, the gem name should be the same as the thing you require when using
@@ -48,5 +50,3 @@ An example `jenkins.sh`:
     bundle install --path "${HOME}/bundles/${JOB_NAME}"
     bundle exec rake
     bundle exec rake publish_gem
-
-
