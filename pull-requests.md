@@ -44,7 +44,7 @@ If you are not sure how to do any of this, please feel free to ask for help.
 Note: The canonical description of changes should always be in the individual
 commits - Pull Requests are an artefact of GitHub, and we would lose that data
 if we switched away. Please refer to the [commit message
-styleguide](/git.md#commit-messages).
+style guide](/git.md#commit-messages).
 
 ### Reviewing a request
 

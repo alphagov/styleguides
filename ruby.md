@@ -26,7 +26,7 @@ Some good reasons to ignore a particular guideline:
 
 The rules in this guide are annotated with their corresponding automated validators in Rubocop. Please see [using-rubocop](using-rubocop.md) for more information.
 
-This styleguide is based on [GitHub's](https://github.com/styleguide/ruby).
+This style guide is based on [GitHub's](https://github.com/styleguide/ruby).
 
 ## General
 

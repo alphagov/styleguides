@@ -1,6 +1,6 @@
-# Go styleguide
+# Go style guide
 
-The purpose of this styleguide is to provide some conventions for working on Go code within GDS. There are already good resources on writing Go code, which are worth reading first:
+The purpose of this style guide is to provide some conventions for working on Go code within GDS. There are already good resources on writing Go code, which are worth reading first:
 
 * [Effective Go](https://golang.org/doc/effective_go.html)
 * [Code Review Comments](https://code.google.com/p/go-wiki/wiki/CodeReviewComments) (documenting points that have been raised in Google code reviews)
