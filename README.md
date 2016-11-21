@@ -1,6 +1,6 @@
 # GOV.UK Style guides
 
-This is a collection of styleguides for development of apps on GOV.UK.
+This is a collection of style guides for development of apps on GOV.UK.
 
 ## Languages
 

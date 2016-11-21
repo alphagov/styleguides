@@ -1,6 +1,6 @@
-## API styleguide
+# API style guide
 
-### RESTful behaviour and HTTP status codes
+## RESTful behaviour and HTTP status codes
 
 - Use `202` for times when the data is valid, but we've queued the persistence for background processing, as described in [RFC 7231](http://tools.ietf.org/html/rfc7231#section-6.3.3):
 
