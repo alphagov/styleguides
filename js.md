@@ -2,6 +2,7 @@
 
 ## Contents
 
+* [Linting](#linting)
 * [Whitespace](#whitespace)
 * [Naming conventions](#naming-conventions)
 * [CoffeeScript](#coffeescript)
@@ -14,6 +15,36 @@
 * [jQuery](#jquery)
 * [Method arguments](#method-arguments)
 * [Let the project define the style](#let-the-project-define-the-style)
+
+## Linting
+
+We follow [standardjs](http://standardjs.com/), an opinionated JavaScript linter.
+All JavaScript files follow its conventions, and it typically runs on CI to ensure that new pull requests are in line with them.
+
+## Running standard manually
+
+To check the whole codebase, run:
+
+```bash
+npm install --global standard
+standard
+```
+
+### Running standard in your editor
+
+Easier than running standard manually is to install it as a plugin in your editor. This way, it will run automatically while you work, catching errors as they happen on a per-file basis.
+
+There are [official guides for most of the popular editors](http://standardjs.com/index.html#text-editor-plugins).
+
+### Why standard?
+
+Linting rules can be a contentious subject, and a lot of them are down to personal preference. The core idea of standard is to be opinionated and limit the amount of initial bikeshedding discussions around which linting rules to pick, because in the end, it's not as important which rules you pick as it is to just be consistent about it. This is why we chose standard: because we want to be consistent about how we write code, but don't want to spend unnecessary time picking different rules (which all have valid points).
+
+The standard docs have a [complete list of rules and some reasoning behind them](http://standardjs.com/rules.html).
+
+Standard is also [widely used (warning: large file)](https://github.com/feross/standard-packages/blob/master/all.json) (which means community familiarity) and has a [good ecosystem of plugins](http://standardjs.com/awesome.html).
+
+If we decide to move away from it, standard is effectively just a preconfigured bundle of eslint, so it can easily be replaced by switching to a generic `.eslintrc` setup.
 
 ## Whitespace
 
