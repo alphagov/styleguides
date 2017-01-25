@@ -292,13 +292,3 @@ to go to that method to find out what `20` or `false` mean. A call to
 easier to refactor arguments without having to change all method calls.
 
 [Connascence of naming is a weaker form of connascence than connascence of position](http://en.wikipedia.org/wiki/Connascence_%28computer_programming%29#Types_of_connascence).
-
-## Let the project define the style
-
-As with most parts of software development, it's better to be consistent than
-perfect. If your repository already has a style then follow it.
-
-If you're looking for inspiration, we find the [Airbnb JavaScript style
-guide][airbnb-js] to be very sensible.
-
-[airbnb-js]: https://github.com/airbnb/javascript
