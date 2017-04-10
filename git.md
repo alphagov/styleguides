@@ -143,7 +143,10 @@ push *all* remote-tracking branches.
 
 So, if you ever need to force push the 'foobar' branch, please instead do
 
-    $ git push -f origin foobar
+    $ git push --force-with-lease origin foobar
+
+`--force-with-lease` refuses to update a branch unless it is the state that we expect; i.e. nobody has updated the remote branch.
+See: https://developer.atlassian.com/blog/2015/04/force-with-lease/
 
 You can also change git's default behaviour of pushing all tracked branches by
 doing `git config --global push.default upstream`, but you should probably get
