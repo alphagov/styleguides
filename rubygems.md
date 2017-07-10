@@ -20,7 +20,7 @@ branches.
 ## File layout
 
 We should follow the scheme used by Bundler when creating gems (see [this
-asciicast](http://asciicasts.com/episodes/245-new-gem-with-bundler)).
+railscast](http://railscasts.com/episodes/245-new-gem-with-bundler?view=asciicast)).
 
 Some points to note:
 
