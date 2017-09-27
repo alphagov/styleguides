@@ -97,7 +97,7 @@ Who are these for? These are for people who scan the list in [alphagov](https://
 
 - Include information about whether it's on GOV.UK
 - Try to tone down technical language - 'Filtered search of content' is better than 'Faceted search interface'
-- Don't use the GitHub link field unless it has a single unchanging URL - better to version public links with the code
+- Use the GitHub link field to link to the developer docs page for the repository, or otherwise the live service (if public facing)
 
 A good example:
 
