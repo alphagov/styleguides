@@ -25,9 +25,4 @@ If you have an existing Ruby project that has a number of violations of the GDS 
 
 ## Jenkins builds
 
-You may wish to use your project's Jenkins build to track whether more violations of the Ruby style guide are being added to your project.
-For an example of how to set that up for a project, please see:
-
-* [whitehall](https://github.com/alphagov/whitehall/pull/2228)
-* [slimmer](https://github.com/alphagov/slimmer/pull/134)
-* [signonotron2](https://github.com/alphagov/signonotron2/pull/382)
+The default Jenkins build script will detect if you are using `govuk-lint` and will run it automatically.
