@@ -11,7 +11,7 @@
     tokens etc.) within Puppet. To do so means that even if you specify that a 
     secret applies to one particular environment it is available on the 
     PuppetMaster for every environment. It is good practise to store 
-    secrets in the `deployment` repo at `Puppet/hieradata/${environment}.yaml`.
+    secrets in the `govuk-secrets` repo at `puppet/hieradata/${environment}.yaml`.
     Please make sure where necessary you have different secrets for each value.
     
 -   **Per-environment switches**. The Puppet repo should not know the 
@@ -21,8 +21,8 @@
     catalog item to a subset of environments you should:
     1. Add a feature toggle to Hiera (default goes in `common.yaml`, per 
        environment value goes in `${environment}.yaml`. Be aware that 
-       Hiera data for environments is in the `deployment` repo, but
-       Hieradata for `development` is in the development repo. `common.yaml`
+       Hieradata for environments is in the `govuk-secrets` repo, but
+       Hieradata for development is in the `govuk-puppet` repo. `common.yaml`
        exists in both repos.
     2. Switch on resources based on the feature toggle in Hieradata:
        [Puppet/modules/govuk/manifests/node/s_base.pp#LC25]
@@ -149,4 +149,4 @@ available on the Infrastructure Wiki.
 When creating a service, it is desirable to also check that it is
 functioning correctly. Our standard for monitoring is Nagios. You can
 see more details of how to monitor a service with Nagios in the
-[nagios Puppet module](https://github.gds/gds/puppet/blob/master/modules/nagios/manifests/client/checks.pp)
+[Icinga Puppet module](https://github.com/alphagov/govuk-puppet/blob/master/modules/icinga/manifests/client/checks.pp)
