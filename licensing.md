@@ -20,7 +20,7 @@ e.g. `Copyright (c) 2017 Crown Copyright (Government Digital Service)`.
 
 The year should be the year the code was first published. Where the code is continually updated with significant changes, the year can be shown as a period from first to most recent update (e.g. 2015-2017).
 
-For more information on copyright notices, see the [UK Copyright Service fact sheet](http://www.copyrightservice.co.uk/copyright/p03_copyright_notice).
+For more information on copyright notices, see the [UK Copyright Service fact sheet](http://www.copyrightservice.co.uk/copyright/p03_copyright_notices).
 
 ## Example
 
