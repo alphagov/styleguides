@@ -14,6 +14,7 @@ developers on your project. This includes:
 
 ### Recommended blog posts on this topic
 
+* [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
 * [5 useful tips for a better commit message](http://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message)
 * [Every line of code is always documented](http://mislav.uniqpath.com/2014/02/hidden-documentation/)
 
