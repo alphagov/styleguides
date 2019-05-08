@@ -13,7 +13,7 @@ For a good quick overview, see [the OWASP Top 10 list](https://www.owasp.org/ind
 - Use ActiveRecord’s built-in methods and [SQL parameter sanitisation](http://guides.rubyonrails.org/security.html#sql-injection-countermeasures) to avoid SQL injection
 - It is worth including [Brakeman](http://brakemanscanner.org/) in the
   project's CI build. (An example for those who have access is the
-  [Signon build](https://ci-new.alphagov.co.uk/view/Signon/job/govuk_signonotron2/configure).) Be aware though that this does not substitue
+  [Signon build](https://ci-new.alphagov.co.uk/view/Signon/job/govuk_signonotron2/configure).) Be aware though that this does not substitute
   for awareness of security issues as it will not pick up everything.
 
 It is worth familiarising yourself with the [Ruby on Rails Security Guide](http://guides.rubyonrails.org/security.html).
