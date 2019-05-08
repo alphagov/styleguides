@@ -4,7 +4,7 @@ This is a collection of style guides for development of apps on GOV.UK.
 
 ## Languages
 
-[CSS][css]
+[CSS/Sass][css]
 
 [Go][go]
 
