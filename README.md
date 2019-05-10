@@ -1,3 +1,5 @@
+**Deprecation notice: style guides have been moved to [The GDS Way](https://gds-way.cloudapps.digital/) and will no longer be maintained here.**
+
 # GOV.UK Style guides
 
 This is a collection of style guides for development of apps on GOV.UK.
